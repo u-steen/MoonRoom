@@ -10,20 +10,26 @@
     --moonOrange: #c47d1b;
     --moonRed: #b1372f;
 
-    --moonFontSize1: 48px;
+    --moonFontSize1: 44px;
     --moonFontSize2: 24px;
     --moonFontSize3: 14px;
 
-    --moonWidth1: 1366px;
-    --moonWidth2: 1080px;
-    --moonWidth3: 750px;
+    --moonWidth1: 1080px;
+    --moonWidth2: 768px;
+    --moonWidth3: plm;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 #topBarContainer {
     display: grid;
-    grid-template-columns: auto var(--moonWidth1) auto;
+    grid-template-columns: 1fr var(--moonWidth1) 1fr;
     background-color: var(--moonWhite);
-    width: 100%;
+    /* width: 100%; */
 }
 
 #topBar {
@@ -32,6 +38,7 @@
     display: flex;
 
     /* Style */
+    width: var(--moonWidth1);
     background-color: inherit;
     padding: 5px 0;
 }
@@ -92,6 +99,8 @@
     border: 0;
 }
 
+/** Nav Bar  */
+
 #navContainer {
     background-color: var(--moonBlack);
     display: grid;
@@ -99,27 +108,56 @@
     width: 100%;
 }
 
-nav {
+#navContainer > nav {
     grid-column: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-/* ! Fix links not taking the whole li tag */
-nav > a {
+#navContainer > nav > ul {
+    display: flex;
+    width: 100%;
+    color: var(--moonWhite);
+    justify-content: space-between;
+}
+
+nav > ul > li {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    color: var(--moonWhite);
-    font-size: var(--moonFontSize2);
-    font-weight: 600;
-    background-color: var(--moonBlack);
+    position: relative;
 }
 
-nav > a:hover {
+nav > ul > li:hover {
+    background-color: var(--moonWhite);
+    color: var(--moonBlack);
+}
+
+/* Dropdown */
+
+nav > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+}
+
+/* Elements of dropdown */
+nav > ul > li > ul > li {
+    background-color: var(--moonBlack);
+    color: var(--moonWhite);
+    height: 30px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > ul > li > ul > li:hover {
     background-color: var(--moonWhite);
     color: var(--moonBlack);
 }
@@ -127,7 +165,7 @@ nav > a:hover {
 /** Container */
 #container {
     width: var(--moonWidth1);
-    margin: 0 auto;
+    margin: 150px auto;
     height: 100%;
 }
 
@@ -348,22 +386,4 @@ footer {
     grid-column: 3;
     grid-row: 4;
     margin: 10px auto 0 auto;
-}
-
-@media (max-width: 1366px) {
-    #topBarContainer {
-        grid-template-columns: auto var(--moonWidth2) auto;
-    }
-    #navContainer {
-        grid-template-columns: auto var(--moonWidth2) auto;
-    }
-}
-
-@media (max-width: 1080px) {
-    #topBarContainer {
-        grid-template-columns: auto 1fr auto;
-    }
-    #navContainer {
-        grid-template-columns: auto 1fr auto;
-    }
 }
