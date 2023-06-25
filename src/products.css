@@ -1,0 +1,91 @@
+#container {
+    width: var(--moonWidth1);
+    margin: 150px auto;
+    font-size: var(--moonFontSize2);
+}
+
+/* ! FONTS ARE NOT SET */
+
+#productsBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#productsBar > h2 {
+    flex: 1;
+    grid-column: 1;
+    font-size: var(--moonFontSize1);
+}
+
+#buttonsContainer {
+    grid-column: 2;
+    flex: 1;
+}
+
+#buttonsContainer > * {
+    float: right;
+    border: 1px solid var(--moonGray);
+    width: 150px;
+    height: 25px;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+/** Products */
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 60px;
+}
+
+/* Product */
+.product {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    border: 1px solid var(--moonGray);
+    display: flex;
+}
+
+.product img {
+    height: 250px;
+    width: 250px;
+}
+
+.product:hover img {
+    filter: brightness(50%);
+}
+
+.product h3 {
+    display: none;
+    position: absolute;
+    width: 80px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 70px;
+    color: var(--moonWhite);
+}
+
+.product button {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 120px;
+    border: 0;
+}
+
+.product:hover h3 {
+    display: block;
+}
+
+.product:hover button {
+    display: block;
+}
