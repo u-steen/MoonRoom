@@ -1,0 +1,6 @@
+Icons got from Google Fonts -> Icons
+Settings:
+- Fill: Off
+- Weight: 300
+- Grade: 0
+- Optical Size: 48px

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "dining-table-1",
+    "name": "Wood Dining Table",
+    "priceEUR": "270",
+    "description": "Wood dining table for the whole family.",
+    "imgSrc": "../img/tbc"
+  },
+  {
+    "id": "dining-table-2",
+    "name": "Simple Dining Table",
+    "priceEUR": "75",
+    "description": "Simple and affordable dining table for you and your family.",
+    "imgSrc": "../img/tbc"
+  },
+  {
+    "id": "desk-1",
+    "nume": "Desk",
+    "priceEUR": "120",
+    "description": "Desk for children, perfect for a computer.",
+    "imgSrc": "../img/tbc"
+  }
+]

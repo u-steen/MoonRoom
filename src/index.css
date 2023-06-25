@@ -1,0 +1,369 @@
+:root {
+    font-family: 'Segoe UI';
+    box-sizing: border-box;
+
+    --moonBlack: #101010;
+    --moonWhite: #f0f0f0;
+    --moonPurple: #ae76e6;
+    --moonGreen: #81a472;
+    --moonBrown: #856a47;
+    --moonOrange: #c47d1b;
+    --moonRed: #b1372f;
+
+    --moonFontSize1: 48px;
+    --moonFontSize2: 24px;
+    --moonFontSize3: 14px;
+
+    --moonWidth1: 1366px;
+    --moonWidth2: 1080px;
+    --moonWidth3: 750px;
+}
+
+#topBarContainer {
+    display: grid;
+    grid-template-columns: auto var(--moonWidth1) auto;
+    background-color: var(--moonWhite);
+    width: 100%;
+}
+
+#topBar {
+    /* Positioning */
+    grid-column: 2;
+    display: flex;
+
+    /* Style */
+    background-color: inherit;
+    padding: 5px 0;
+}
+
+#topBar > #logo {
+    /* Positioning */
+    display: flex;
+    justify-content: left;
+    /* Style */
+    flex: 1;
+    font-weight: 900;
+    font-size: var(--moonFontSize1);
+    /* background-color: pink; */
+}
+
+#topBar > #searchBar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: greenyellow; */
+}
+
+#searchBar > #searchInput {
+    height: 40px;
+    width: 400px;
+    padding: 0 25px 0 25px;
+    border-radius: 50px 0 0 50px;
+    font-size: var(--moonFontSize3);
+    border: 1px var(--moonBlack) solid;
+    border-right: 0px;
+    box-sizing: border-box;
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+#searchBar > button {
+    height: 40px;
+    border-radius: 0 50px 50px 0;
+    border: 1px var(--moonBlack) solid;
+    border-left: 0;
+}
+
+#searchBar > button > img {
+    height: 35px;
+    width: auto;
+}
+
+#topBar > #cart {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+#cart button {
+    border: 0;
+}
+
+#navContainer {
+    background-color: var(--moonBlack);
+    display: grid;
+    grid-template-columns: auto var(--moonWidth1) auto;
+    width: 100%;
+}
+
+nav {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ! Fix links not taking the whole li tag */
+nav > a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: var(--moonWhite);
+    font-size: var(--moonFontSize2);
+    font-weight: 600;
+    background-color: var(--moonBlack);
+}
+
+nav > a:hover {
+    background-color: var(--moonWhite);
+    color: var(--moonBlack);
+}
+
+/** Container */
+#container {
+    width: var(--moonWidth1);
+    margin: 0 auto;
+    height: 100%;
+}
+
+#hero {
+    margin: 50px 0;
+    background-image: url('../img/hero2.jpg');
+    height: 500px;
+    padding: 50px;
+    background-size: 100%;
+    background-position: center;
+}
+
+#hero > h1 {
+    font-size: var(--moonFontSize1);
+    color: var(--moonOrange);
+    text-shadow: -1px -1px 0 var(--moonBlack), 1px -1px 0 var(--moonBlack),
+        -1px 1px 0 var(--moonBlack), 1px 1px 0 var(--moonBlack),
+        0 0 3px var(--moonBlack);
+    font-weight: 900;
+}
+
+/** Recommanded Section */
+
+#new {
+    margin-bottom: 20px;
+}
+
+#new > h1 {
+    font-size: var(--moonFontSize1);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#new > h1 > span {
+    font-weight: 900;
+    color: var(--moonRed);
+}
+
+#cardContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: scroll; */
+}
+
+#prevArrow,
+#nextArrow {
+    font-size: 3.5rem;
+    color: var(--moonBlack);
+}
+
+.card {
+    background-color: var(--moonWhite);
+    height: 250px;
+    width: 200px;
+}
+
+/* ! Centreaza texul in carduri */
+.card .cardTextBox {
+    font-size: var(--moonFontSize2);
+    background-color: var(--moonBrown);
+    color: var(--moonWhite);
+    font-weight: 600;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTextBox > h2 {
+    display: inline;
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+}
+
+.card:nth-child(2n) img {
+    content: url('../img/products/chiar1.jpg');
+}
+.card:nth-child(2n + 1) img {
+    content: url('../img/products/chiar2.jpg');
+}
+
+/** Inspiration */
+
+#inspirationContainer {
+    height: 700px;
+    background-color: var(--moonBrown);
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 2fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+#inspirationTextBox {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#inspirationTextBox > h1 {
+    font-size: var(--moonFontSize1);
+    color: var(--moonWhite);
+    font-weight: 800;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+#inspirationTextBox > p {
+    font-size: --size3;
+    margin-bottom: 20px;
+}
+
+#inspirationTextBox button {
+    width: 100px;
+    height: 3rem;
+    background-color: var(--moonWhite);
+    color: var(--moonBrown);
+    font-size: var(--moonFontSize3);
+    border: 0;
+    font-weight: 600;
+}
+
+#inspirationTextBox button:hover {
+    background-color: var(--moonBrown);
+    color: var(--moonWhite);
+    border: 1px var(--moonWhite) solid;
+}
+
+#inspirationContainer > #img1 {
+    content: url('../img/inspiration1.jpg');
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: aqua;
+}
+#inspirationContainer > #img2 {
+    content: url('../img/inspiration2.jpg');
+    grid-column: 1;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: hotpink;
+}
+
+/** Footer */
+footer {
+    width: 100%;
+    background-color: var(--moonBlack);
+    color: var(--moonWhite);
+}
+
+#footerContent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 200px 50px 30px;
+}
+
+#footerContent h2 {
+    font-size: var(--moonFontSize2);
+    color: var(--moonWhite);
+    margin-bottom: 10px;
+}
+
+#footerContent h3 {
+    font-size: var(--moonFontSize3);
+    color: var(--moonWhite);
+}
+
+#footerServices {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0 auto;
+}
+
+#footerCareers {
+    grid-column: 3;
+    grid-row: 2;
+    margin: 0 auto;
+}
+
+#footerAbout {
+    grid-column: 4;
+    grid-row: 2;
+    margin: 0 auto;
+}
+
+#footerSocials {
+    grid-column: 3;
+    grid-row: 3;
+    margin: 0 auto;
+}
+
+#footerSocials > img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+#insta {
+    content: url(../img/insta.svg);
+}
+
+#twitter {
+    content: url(../img/twitter.svg);
+}
+
+#linkedin {
+    content: url(../img/linkedin.svg);
+}
+
+#footerRights {
+    grid-column: 3;
+    grid-row: 4;
+    margin: 10px auto 0 auto;
+}
+
+@media (max-width: 1366px) {
+    #topBarContainer {
+        grid-template-columns: auto var(--moonWidth2) auto;
+    }
+    #navContainer {
+        grid-template-columns: auto var(--moonWidth2) auto;
+    }
+}
+
+@media (max-width: 1080px) {
+    #topBarContainer {
+        grid-template-columns: auto 1fr auto;
+    }
+    #navContainer {
+        grid-template-columns: auto 1fr auto;
+    }
+}
