@@ -21,7 +21,7 @@
         "priceEUR": 330,
         "description": "Queen bed perfect for a lovely couple",
         "imgSrc": "../img/products/alice-queen-bed.jpg",
-        "categories": ["bedroom", "bed"]
+        "categories": ["bedroom", "furniture"]
     },
     {
         "id": "sun-bed",
@@ -29,7 +29,7 @@
         "priceEUR": 100,
         "description": "Bed for a kid or small adult.",
         "imgSrc": "../img/products/sun-bed.jpg",
-        "categories": ["bedroom", "bed"]
+        "categories": ["bedroom", "furniture"]
     },
     {
         "id": "container-bed",
@@ -37,14 +37,150 @@
         "priceEUR": 480,
         "description": "King size bed with a storage compartment.",
         "imgSrc": "../img/products/container-bed.jpg",
-        "categories": ["bedroom", "bed"]
+        "categories": ["bedroom", "furniture"]
     },
     {
-        "id": "",
-        "name": "",
-        "priceEUR": 0,
+        "id": "adam-bookshelf",
+        "name": "Adam Bookshelf",
+        "priceEUR": 220,
         "description": "",
-        "imgSrc": "../img/products/",
-        "categories": []
+        "imgSrc": "../img/products/adam-bookshelf.jpg",
+        "categories": ["bedroom", "living", "furniture"]
+    },
+    {
+        "id": "alex-helves",
+        "name": "Alex Shelves",
+        "priceEUR": 35,
+        "description": "",
+        "imgSrc": "../img/products/alex-shelf.jpg",
+        "categories": ["bedroom", "storage"]
+    },
+    {
+        "id": "amanda-shelves",
+        "name": "Amanda Shelves",
+        "priceEUR": 79,
+        "description": "",
+        "imgSrc": "../img/products/amanda-shelves.jpg",
+        "categories": ["bathroom", "living", "storage"]
+    },
+    {
+        "id": "box-nightstand",
+        "name": "Box Nightstand",
+        "priceEUR": 105,
+        "description": "",
+        "imgSrc": "../img/products/box-nightstand.webp",
+        "categories": ["bedroom", "furniture"]
+    },
+    {
+        "id": "brooklyn-lamp",
+        "name": "Brooklyn Lamp",
+        "priceEUR": 45,
+        "description": "",
+        "imgSrc": "../img/products/brooklyn-lamp.webp",
+        "categories": ["bedroom", "lights"]
+    },
+    {
+        "id": "cage-lamp",
+        "name": "Cage Lamp",
+        "priceEUR": 59,
+        "description": "",
+        "imgSrc": "../img/products/cage-lamp.jpg",
+        "categories": ["bedroom", "living", "lights"]
+    },
+    {
+        "id": "display-closet",
+        "name": "Display Closet",
+        "priceEUR": 320,
+        "description": "",
+        "imgSrc": "../img/products/display-closet.jpg",
+        "categories": ["bedroom", "storage", "furniture"]
+    },
+    {
+        "id": "double-wooden-dresser",
+        "name": "Double Wooden Dresser",
+        "priceEUR": 240,
+        "description": "",
+        "imgSrc": "../img/products/double-wooden-dresser.jpg",
+        "categories": ["bedroom", "furniture", "storage"]
+    },
+    {
+        "id": "emmerson-shelves",
+        "name": "Emmerson Shelves",
+        "priceEUR": 70,
+        "description": "",
+        "imgSrc": "../img/products/emmerson-shelves.jpg",
+        "categories": ["kitchen", "storage"]
+    },
+    {
+        "id": "gia-dresser",
+        "name": "Gia Dresser",
+        "priceEUR": 129,
+        "description": "",
+        "imgSrc": "../img/products/gia-dresser.jpg",
+        "categories": ["bedroom", "living", "storage", "furniture"]
+    },
+    {
+        "id": "harlow-nightstand",
+        "name": "Harlow Nightstand",
+        "priceEUR": 95,
+        "description": "",
+        "imgSrc": "../img/products/harlow-nightstand.webp",
+        "categories": ["bedroom", "furniture"]
+    },
+    {
+        "id": "industrila-nightstand",
+        "name": "Industrial Nightstand",
+        "priceEUR": 60,
+        "description": "",
+        "imgSrc": "../img/products/industrial-nightstand.jpg",
+        "categories": ["bedroom", "furniture"]
+    },
+    {
+        "id": "ledder-bookshelf",
+        "name": "Ledder Bookshelf",
+        "priceEUR": 110,
+        "description": "",
+        "imgSrc": "../img/products/ledder-bookshelf.jpg",
+        "categories": ["living", "storage", "furniture"]
+    },
+    {
+        "id": "ledder-shelf",
+        "name": "Ledder Shelf",
+        "priceEUR": 89,
+        "description": "",
+        "imgSrc": "../img/products/ledder-shelf.jpg",
+        "categories": ["living", "storage", "furniture"]
+    },
+    {
+        "id": "marte-dresser",
+        "name": "Marte Dresser",
+        "priceEUR": 120,
+        "description": "",
+        "imgSrc": "../img/products/marte-dresser.webp",
+        "categories": ["bedroom", "storage", "furniture"]
+    },
+    {
+        "id": "stainless-steel-floor-lamp",
+        "name": "Stainless Steel Floor Lamp",
+        "priceEUR": 60,
+        "description": "",
+        "imgSrc": "../img/products/stainless-steel-floor-lamp.jpg",
+        "categories": ["bedroom", "living", "lights"]
+    },
+    {
+        "id": "tower-bookshelf",
+        "name": "Tilted Tower Bookshelf",
+        "priceEUR": 390,
+        "description": "",
+        "imgSrc": "../img/products/tower-bookshelf.webp",
+        "categories": ["bedroom", "furniture", "storage", "furniture"]
+    },
+    {
+        "id": "vase-lamp",
+        "name": "Vase Lamp",
+        "priceEUR": 70,
+        "description": "",
+        "imgSrc": "../img/products/vase-lamp.jpg",
+        "categories": ["bedroom", "living", "lights"]
     }
 ]
