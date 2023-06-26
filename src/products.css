@@ -59,6 +59,25 @@
     filter: brightness(50%);
 }
 
+#pNameDiv {
+    display: table;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 30px;
+}
+
+#pPriceDiv {
+    display: table;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 90px;
+}
 .product h3 {
     display: none;
     position: absolute;
@@ -70,6 +89,12 @@
     color: var(--moonWhite);
 }
 
+.product h2 {
+    display: none;
+    vertical-align: middle;
+    color: var(--moonWhite);
+}
+
 .product button {
     display: none;
     position: absolute;
@@ -78,14 +103,16 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 120px;
+    top: 140px;
     border: 0;
 }
 
-.product:hover h3 {
-    display: block;
+.pContentDiv:hover {
+    display: table;
 }
 
+.product:hover h2,
+.product:hover h3,
 .product:hover button {
-    display: block;
+    display: table-cell;
 }

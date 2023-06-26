@@ -1,23 +1,50 @@
 [
-  {
-    "id": "dining-table-1",
-    "name": "Wood Dining Table",
-    "priceEUR": "270",
-    "description": "Wood dining table for the whole family.",
-    "imgSrc": "../img/tbc"
-  },
-  {
-    "id": "dining-table-2",
-    "name": "Simple Dining Table",
-    "priceEUR": "75",
-    "description": "Simple and affordable dining table for you and your family.",
-    "imgSrc": "../img/tbc"
-  },
-  {
-    "id": "desk-1",
-    "nume": "Desk",
-    "priceEUR": "120",
-    "description": "Desk for children, perfect for a computer.",
-    "imgSrc": "../img/tbc"
-  }
+    {
+        "id": "wooden-chair",
+        "name": "Wooden Chair",
+        "priceEUR": 70,
+        "description": "Wooden chair that can be used inside and outside",
+        "imgSrc": "../img/products/chiar1.jpg",
+        "categories": ["garden", "kitchen", "furniture"]
+    },
+    {
+        "id": "ricardo-chair",
+        "name": "Ricardo Chair",
+        "priceEUR": 105,
+        "description": "Perfect for a cozy living room or kitchen",
+        "imgSrc": "../img/products/chiar2.jpg",
+        "categories": ["kitchen", "living", "furniture"]
+    },
+    {
+        "id": "alice-queen-bed",
+        "name": "Alice Queen Bed",
+        "priceEUR": 330,
+        "description": "Queen bed perfect for a lovely couple",
+        "imgSrc": "../img/products/alice-queen-bed.jpg",
+        "categories": ["bedroom", "bed"]
+    },
+    {
+        "id": "sun-bed",
+        "name": "Sun Bed",
+        "priceEUR": 100,
+        "description": "Bed for a kid or small adult.",
+        "imgSrc": "../img/products/sun-bed.jpg",
+        "categories": ["bedroom", "bed"]
+    },
+    {
+        "id": "container-bed",
+        "name": "Container bed",
+        "priceEUR": 480,
+        "description": "King size bed with a storage compartment.",
+        "imgSrc": "../img/products/container-bed.jpg",
+        "categories": ["bedroom", "bed"]
+    },
+    {
+        "id": "",
+        "name": "",
+        "priceEUR": 0,
+        "description": "",
+        "imgSrc": "../img/products/",
+        "categories": []
+    }
 ]
