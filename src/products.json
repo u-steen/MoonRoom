@@ -5,7 +5,7 @@
         "priceEUR": 70,
         "description": "Wooden chair that can be used inside and outside",
         "imgSrc": "../img/products/chiar1.jpg",
-        "categories": ["garden", "kitchen", "furniture"]
+        "tags": ["garden", "kitchen-dining", "furniture"]
     },
     {
         "id": "ricardo-chair",
@@ -13,7 +13,7 @@
         "priceEUR": 105,
         "description": "Perfect for a cozy living room or kitchen",
         "imgSrc": "../img/products/chiar2.jpg",
-        "categories": ["kitchen", "living", "furniture"]
+        "tags": ["kitchen-dining", "living", "furniture"]
     },
     {
         "id": "alice-queen-bed",
@@ -21,7 +21,7 @@
         "priceEUR": 330,
         "description": "Queen bed perfect for a lovely couple",
         "imgSrc": "../img/products/alice-queen-bed.jpg",
-        "categories": ["bedroom", "furniture"]
+        "tags": ["bedroom", "furniture"]
     },
     {
         "id": "sun-bed",
@@ -29,7 +29,7 @@
         "priceEUR": 100,
         "description": "Bed for a kid or small adult.",
         "imgSrc": "../img/products/sun-bed.jpg",
-        "categories": ["bedroom", "furniture"]
+        "tags": ["bedroom", "furniture"]
     },
     {
         "id": "container-bed",
@@ -37,7 +37,7 @@
         "priceEUR": 480,
         "description": "King size bed with a storage compartment.",
         "imgSrc": "../img/products/container-bed.jpg",
-        "categories": ["bedroom", "furniture"]
+        "tags": ["bedroom", "furniture"]
     },
     {
         "id": "adam-bookshelf",
@@ -45,7 +45,7 @@
         "priceEUR": 220,
         "description": "",
         "imgSrc": "../img/products/adam-bookshelf.jpg",
-        "categories": ["bedroom", "living", "furniture"]
+        "tags": ["bedroom", "living", "furniture"]
     },
     {
         "id": "alex-helves",
@@ -53,7 +53,7 @@
         "priceEUR": 35,
         "description": "",
         "imgSrc": "../img/products/alex-shelf.jpg",
-        "categories": ["bedroom", "storage"]
+        "tags": ["bedroom", "storage"]
     },
     {
         "id": "amanda-shelves",
@@ -61,7 +61,7 @@
         "priceEUR": 79,
         "description": "",
         "imgSrc": "../img/products/amanda-shelves.jpg",
-        "categories": ["bathroom", "living", "storage"]
+        "tags": ["bathroom", "living", "storage"]
     },
     {
         "id": "box-nightstand",
@@ -69,7 +69,7 @@
         "priceEUR": 105,
         "description": "",
         "imgSrc": "../img/products/box-nightstand.webp",
-        "categories": ["bedroom", "furniture"]
+        "tags": ["bedroom", "furniture"]
     },
     {
         "id": "brooklyn-lamp",
@@ -77,7 +77,7 @@
         "priceEUR": 45,
         "description": "",
         "imgSrc": "../img/products/brooklyn-lamp.webp",
-        "categories": ["bedroom", "lights"]
+        "tags": ["bedroom", "lights"]
     },
     {
         "id": "cage-lamp",
@@ -85,7 +85,7 @@
         "priceEUR": 59,
         "description": "",
         "imgSrc": "../img/products/cage-lamp.jpg",
-        "categories": ["bedroom", "living", "lights"]
+        "tags": ["bedroom", "living", "lights"]
     },
     {
         "id": "display-closet",
@@ -93,7 +93,7 @@
         "priceEUR": 320,
         "description": "",
         "imgSrc": "../img/products/display-closet.jpg",
-        "categories": ["bedroom", "storage", "furniture"]
+        "tags": ["bedroom", "storage", "furniture"]
     },
     {
         "id": "double-wooden-dresser",
@@ -101,7 +101,7 @@
         "priceEUR": 240,
         "description": "",
         "imgSrc": "../img/products/double-wooden-dresser.jpg",
-        "categories": ["bedroom", "furniture", "storage"]
+        "tags": ["bedroom", "furniture", "storage"]
     },
     {
         "id": "emmerson-shelves",
@@ -109,7 +109,7 @@
         "priceEUR": 70,
         "description": "",
         "imgSrc": "../img/products/emmerson-shelves.jpg",
-        "categories": ["kitchen", "storage"]
+        "tags": ["kitchen-dining", "storage"]
     },
     {
         "id": "gia-dresser",
@@ -117,7 +117,7 @@
         "priceEUR": 129,
         "description": "",
         "imgSrc": "../img/products/gia-dresser.jpg",
-        "categories": ["bedroom", "living", "storage", "furniture"]
+        "tags": ["bedroom", "living", "storage", "furniture"]
     },
     {
         "id": "harlow-nightstand",
@@ -125,7 +125,7 @@
         "priceEUR": 95,
         "description": "",
         "imgSrc": "../img/products/harlow-nightstand.webp",
-        "categories": ["bedroom", "furniture"]
+        "tags": ["bedroom", "furniture"]
     },
     {
         "id": "industrila-nightstand",
@@ -133,7 +133,7 @@
         "priceEUR": 60,
         "description": "",
         "imgSrc": "../img/products/industrial-nightstand.jpg",
-        "categories": ["bedroom", "furniture"]
+        "tags": ["bedroom", "furniture"]
     },
     {
         "id": "ledder-bookshelf",
@@ -141,7 +141,7 @@
         "priceEUR": 110,
         "description": "",
         "imgSrc": "../img/products/ledder-bookshelf.jpg",
-        "categories": ["living", "storage", "furniture"]
+        "tags": ["living", "storage", "furniture"]
     },
     {
         "id": "ledder-shelf",
@@ -149,7 +149,7 @@
         "priceEUR": 89,
         "description": "",
         "imgSrc": "../img/products/ledder-shelf.jpg",
-        "categories": ["living", "storage", "furniture"]
+        "tags": ["living", "storage", "furniture"]
     },
     {
         "id": "marte-dresser",
@@ -157,7 +157,7 @@
         "priceEUR": 120,
         "description": "",
         "imgSrc": "../img/products/marte-dresser.webp",
-        "categories": ["bedroom", "storage", "furniture"]
+        "tags": ["bedroom", "storage", "furniture"]
     },
     {
         "id": "stainless-steel-floor-lamp",
@@ -165,7 +165,7 @@
         "priceEUR": 60,
         "description": "",
         "imgSrc": "../img/products/stainless-steel-floor-lamp.jpg",
-        "categories": ["bedroom", "living", "lights"]
+        "tags": ["bedroom", "living", "lights"]
     },
     {
         "id": "tower-bookshelf",
@@ -173,7 +173,7 @@
         "priceEUR": 390,
         "description": "",
         "imgSrc": "../img/products/tower-bookshelf.webp",
-        "categories": ["bedroom", "furniture", "storage", "furniture"]
+        "tags": ["bedroom", "furniture", "storage", "furniture"]
     },
     {
         "id": "vase-lamp",
@@ -181,6 +181,6 @@
         "priceEUR": 70,
         "description": "",
         "imgSrc": "../img/products/vase-lamp.jpg",
-        "categories": ["bedroom", "living", "lights"]
+        "tags": ["bedroom", "living", "lights"]
     }
 ]

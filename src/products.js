@@ -1,4 +1,5 @@
 const ITEMSPERPAGE = 20; // 4 by 5 gird
+productsUrl = 'products.json';
 window.onload = () => {
     const products = document.getElementById('products');
     if (!products) {
@@ -7,20 +8,80 @@ window.onload = () => {
     // Get url params
     const urlQuery = window.location.search;
     const urlParams = new URLSearchParams(urlQuery);
+    console.log(urlParams);
+    //      Page
     let page;
     if (urlParams.has('page')) {
         page = urlParams.get('page');
     } else {
         page = 1;
     }
+    //      Tag
+    let tag;
+    if (urlParams.has('tag')) {
+        tag = urlParams.get('tag');
+    } else {
+        tag = 'all';
+    }
+    // TODO: make drowndown tag match the link
+    //      Order By
+    let order;
+    if (urlParams.has('order')) {
+        order = urlParams.get('order');
+    } else {
+        order = 'alph';
+    }
+    // TODO: make drowndown order match the link
+
+    const tagActive = document.getElementById('tag');
+    const orderBy = document.getElementById('orderBy');
+    tagActive.addEventListener('change', () => {
+        goToNewLink(tagActive, orderBy);
+    });
+    orderBy.addEventListener('change', () => {
+        goToNewLink(tagActive, orderBy);
+    });
+
+    function goToNewLink(tagActive, orderBy) {
+        // console.log(
+        //     'MA DUC LA:',
+        //     'products.html?page=' +
+        //         page +
+        //         '&tag=' +
+        //         tagActive.value +
+        //         '&order=' +
+        //         orderBy.value
+        // );
+        window.location.replace(
+            'products.html?page=' +
+                page +
+                '&tag=' +
+                tagActive.value +
+                '&order=' +
+                orderBy.value
+        );
+    }
+    // console.log('Get and use data from', productsUrl, tag, order);
+    getAndUseDataFromJSON(productsUrl, tag, order);
 
     // Display items by page
-    let currProduct = 0;
-    async function getDataFromJSON(url) {
+    async function getAndUseDataFromJSON(url, tag, order) {
         const result = await fetch(url);
         const data = await result.json();
+        let newData = [];
+        // TODO: filter data and show fiiltered data + display page data using new data
+        data.forEach((el) => {
+            // console.log(el);
+            if (tag === 'all' || el.tags.includes(tag)) {
+                newData.push(el);
+            }
+        });
+        displayData(newData, page);
+        displayPageBar(newData);
+    }
+
+    function displayPageBar(data) {
         // Diplay pageBar
-        // first .. page-1 page page+1 .. last
         const pageBarContainer = document.getElementById('pageBar');
         if (!pageBarContainer) {
             console.log('There was an error selectring the page bar!');
@@ -30,18 +91,23 @@ window.onload = () => {
         pageBarArr.forEach((element) => {
             pageBarContainer.appendChild(element);
         });
-        data.forEach((p) => {
-            currProduct++;
-            if (
-                (page - 1) * ITEMSPERPAGE < currProduct &&
-                currProduct <= page * ITEMSPERPAGE
-            ) {
-                generateProduct(p.id, p.name, p.priceEUR, p.imgSrc, products);
-            }
-        });
     }
-    getDataFromJSON('products.json');
 };
+
+function displayData(data, page) {
+    // console.log(data);
+    let currProduct = 0;
+    data.forEach((p) => {
+        currProduct++;
+        if (
+            (page - 1) * ITEMSPERPAGE < currProduct &&
+            currProduct <= page * ITEMSPERPAGE
+        ) {
+            // console.log('bag', p, 'in', products);
+            generateProduct(p.id, p.name, p.priceEUR, p.imgSrc, products);
+        }
+    });
+}
 
 function generateProduct(id, name, price, imgSrc, container) {
     const product = document.createElement('div');
@@ -95,8 +161,6 @@ function createPageBar(currPage, maxPage) {
             cont.appendChild(text);
             return cont;
         }
-
-        return link;
     }
 
     let pageArr = [];
