@@ -1,4 +1,4 @@
-const ITEMSPERPAGE = 20; // 4 by 5 gird
+const ITEMSPERPAGE = 8; // 4 by 5 gird
 productsUrl = 'products.json';
 window.onload = () => {
     const products = document.getElementById('products');
@@ -23,15 +23,19 @@ window.onload = () => {
     } else {
         tag = 'all';
     }
-    // TODO: make drowndown tag match the link
+    const selectedTag = document.getElementById(tag);
+    console.log(selectedTag);
+    selectedTag.setAttribute('selected', 'selected');
     //      Order By
     let order;
     if (urlParams.has('order')) {
         order = urlParams.get('order');
     } else {
-        order = 'alph';
+        order = 'alphabetic';
     }
-    // TODO: make drowndown order match the link
+    const selectedOrder = document.getElementById(order);
+    console.log(selectedOrder);
+    selectedOrder.setAttribute('selected', 'selected');
 
     const tagActive = document.getElementById('tag');
     const orderBy = document.getElementById('orderBy');
@@ -43,15 +47,6 @@ window.onload = () => {
     });
 
     function goToNewLink(tagActive, orderBy) {
-        // console.log(
-        //     'MA DUC LA:',
-        //     'products.html?page=' +
-        //         page +
-        //         '&tag=' +
-        //         tagActive.value +
-        //         '&order=' +
-        //         orderBy.value
-        // );
         window.location.replace(
             'products.html?page=' +
                 page +
@@ -69,25 +64,46 @@ window.onload = () => {
         const result = await fetch(url);
         const data = await result.json();
         let newData = [];
-        // TODO: filter data and show fiiltered data + display page data using new data
+        // NewData has the elements containing the selected tag
         data.forEach((el) => {
             // console.log(el);
             if (tag === 'all' || el.tags.includes(tag)) {
                 newData.push(el);
             }
         });
+        // Ordering newData by the order value
+        switch (order) {
+            case 'alphabetic':
+                newData.sort((a, b) => {
+                    if (a.name > b.name) return 1;
+                    else return -1;
+                });
+                break;
+            case 'priceAsc':
+                newData.sort((a, b) => {
+                    if (a.priceEUR > b.priceEUR) return 1;
+                    else return -1;
+                });
+                break;
+            case 'priceDesc':
+                newData.sort((a, b) => {
+                    if (a.priceEUR > b.priceEUR) return -1;
+                    else return 1;
+                });
+                break;
+        }
         displayData(newData, page);
-        displayPageBar(newData);
+        displayPageBar(newData, tag, order);
     }
 
-    function displayPageBar(data) {
+    function displayPageBar(data, tag, order) {
         // Diplay pageBar
         const pageBarContainer = document.getElementById('pageBar');
         if (!pageBarContainer) {
             console.log('There was an error selectring the page bar!');
         }
         const maxPage = Math.ceil(data.length / ITEMSPERPAGE);
-        const pageBarArr = createPageBar(page, maxPage);
+        const pageBarArr = createPageBar(page, maxPage, tag, order);
         pageBarArr.forEach((element) => {
             pageBarContainer.appendChild(element);
         });
@@ -140,7 +156,7 @@ function generateProduct(id, name, price, imgSrc, container) {
 }
 
 // Function that returns the page bar html object
-function createPageBar(currPage, maxPage) {
+function createPageBar(currPage, maxPage, appliedTag, appliedOrder) {
     currPage = parseInt(currPage);
     maxPage = parseInt(maxPage);
     // Fuction that creates div with h3 containing text
@@ -148,7 +164,15 @@ function createPageBar(currPage, maxPage) {
         const link = document.createElement('a');
         const cont = document.createElement('div');
         const text = document.createElement('h3');
-        link.setAttribute('href', 'products.html?page=' + n);
+        link.setAttribute(
+            'href',
+            'products.html?page=' +
+                n +
+                '&tag=' +
+                appliedTag +
+                '&order=' +
+                appliedOrder
+        );
         text.innerText = n;
         if (selected) {
             cont.setAttribute('id', 'selected');

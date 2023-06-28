@@ -27,21 +27,21 @@
                     <div id="filtersContainer">
                         <label for="tag">Choose products by tag</label>
                         <select id="tag" name="tag">
-                            <option value="all" selected>All</option>
+                            <option value="all" id="all">All</option>
                             <optgroup label="Rooms">
-                                <option value="bedroom">Bedroom</option>
-                                <option value="living">Living</option>
-                                <option value="kitchen-dining">
+                                <option value="bedroom" id="bedroom">Bedroom</option>
+                                <option value="living" id="living">Living</option>
+                                <option value="kitchen-dining" id=>
                                     Kitchen & Dining
                                 </option>
-                                <option value="bathroom">Bathroom</option>
-                                <option value="office">Office</option>
-                                <option value="garden">Garden</option>
+                                <option value="bathroom" id="bathroom">Bathroom</option>
+                                <option value="office" id="office">Office</option>
+                                <option value="garden" id="garden">Garden</option>
                             </optgroup>
                             <optgroup label="Function">
-                                <option value="storage">Storage</option>
-                                <option value="furniture">Furniture</option>
-                                <option value="lights">Lights</option>
+                                <option value="storage" id="storage">Storage</option>
+                                <option value="furniture" id="furniture">Furniture</option>
+                                <option value="lights" id="lights">Lights</option>
                             </optgroup>
                         </select>
                     </div>
@@ -49,11 +49,11 @@
                     <div id="orderByContainer">
                         <label for="orderBy">Order by</label>
                         <select id="orderBy" name="orderBy">
-                            <option value="alphabetic" selected>
+                            <option value="alphabetic" id="alphabetic" selected>
                                 Name: Alphabetic
                             </option>
-                            <option value="priceAsc">Price: Low -> High</option>
-                            <option value="priceDesc">
+                            <option value="priceAsc" id="priceAsc">Price: Low -> High</option>
+                            <option value="priceDesc" id="priceDesc">
                                 Price: High -> Low
                             </option>
                         </select>
