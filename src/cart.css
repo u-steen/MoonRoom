@@ -1,0 +1,79 @@
+#container {
+    width: var(--moonWidth1);
+    margin: 150px auto;
+    height: 100%;
+}
+
+#checkoutTitle {
+    height: 50px;
+    font-size: var(--moonFontSize1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cartItems {
+    background-color: var(--moonWhite);
+    padding: 0 0 20px 0;
+}
+
+#cartTitle {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: var(--moonWhite);
+    border-bottom: 2px solid var(--moonGray);
+    margin-bottom: 20px;
+    height: 50px;
+    font-size: var(--moonFontSize2);
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    border-bottom: 1px solid var(--moonGray);
+    margin: 10px 0;
+}
+
+.productImg {
+    width: 150px;
+    padding: 10px;
+}
+.productImg > img {
+    object-fit: cover;
+    height: 130px;
+    width: 130px;
+}
+
+.productName {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.productDelete {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+.productPrice {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#subtotal {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+#subtotalText {
+    grid-column: 2;
+    font-size: var(--moonFontSize2);
+    justify-self: right;
+}
+#subtotalPrice {
+    grid-column: 3;
+    font-size: var(--moonFontSize2);
+    justify-self: center;
+}
