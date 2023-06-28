@@ -48,8 +48,7 @@ window.onload = () => {
 
     function goToNewLink(tagActive, orderBy) {
         window.location.replace(
-            'products.html?page=' +
-                page +
+            'products.html?page=1' +
                 '&tag=' +
                 tagActive.value +
                 '&order=' +
