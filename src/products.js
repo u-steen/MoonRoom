@@ -1,4 +1,4 @@
-const ITEMSPERPAGE = 8; // 4 by 5 gird
+const ITEMSPERPAGE = 20; // 4 by 5 gird
 productsUrl = 'products.json';
 window.onload = () => {
     const products = document.getElementById('products');

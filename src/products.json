@@ -182,5 +182,173 @@
         "description": "",
         "imgSrc": "../img/products/vase-lamp.jpg",
         "tags": ["bedroom", "living", "lights"]
+    },
+    {
+        "id": "brockton-bamboo-bathroom-accesories",
+        "name": "Brockton Bamboo Bathroom Accesories",
+        "priceEUR": 135,
+        "description": "",
+        "imgSrc": "../img/products/brockton-bamboo-bathroom-accesories.jpg",
+        "tags": ["bathroom", "storage", "accesories"]
+    },
+    {
+        "id": "evo-toilet",
+        "name": "Evo Toilet",
+        "priceEUR": 160,
+        "description": "",
+        "imgSrc": "../img/products/evo-toilet.jpg",
+        "tags": ["bathroom", "toilet"]
+    },
+    {
+        "id": "cast-iron-farm-sink",
+        "name": "Cast Iron Farm Sink",
+        "priceEUR": 190,
+        "description": "",
+        "imgSrc": "../img/products/cast-iron-farm-sink.webp",
+        "tags": ["bathroom", "sink"]
+    },
+    {
+        "id": "ceramic-bathroom-5-set",
+        "name": "Ceramic Bathroom 5-set",
+        "priceEUR": 30,
+        "description": "",
+        "imgSrc": "../img/products/ceramic-bathroom-5-set.webp",
+        "tags": ["bathroom", "sink"]
+    },
+    {
+        "id": "charlotte-toilet",
+        "name": "Charlotte Toilet",
+        "priceEUR": 210,
+        "description": "",
+        "imgSrc": "../img/products/charlotte-toilet.jpg",
+        "tags": ["bathroom", "toilet"]
+    },
+    {
+        "id": "coughton-tallboy-cabinet",
+        "name": "Coughton Tabllboy Cabinet",
+        "priceEUR": 80,
+        "description": "",
+        "imgSrc": "../img/products/coughton-tallboy-cabinet.webp",
+        "tags": ["bathroom", "storage"]
+    },
+    {
+        "id": "grohe-shower",
+        "name": "Grohe Shower",
+        "priceEUR": 40,
+        "description": "",
+        "imgSrc": "../img/products/grohe-shower.png",
+        "tags": ["bathroom", "shower"]
+    },
+    {
+        "id": "joe-sink",
+        "name": "Joe Sink",
+        "priceEUR": 90,
+        "description": "",
+        "imgSrc": "../img/products/joe-sink.jpg",
+        "tags": ["bathroom", "sink"]
+    },
+    {
+        "id": "layla-bathtub",
+        "name": "Layla Bathtub",
+        "priceEUR": 400,
+        "description": "",
+        "imgSrc": "../img/products/layla-bathtub.webp",
+        "tags": ["bathroom", "bathtub"]
+    },
+    {
+        "id": "matt-black-shower",
+        "name": "Matt Black Shower",
+        "priceEUR": 140,
+        "description": "",
+        "imgSrc": "../img/products/matt-black-shower.jpg",
+        "tags": ["bathroom", "shower"]
+    },
+    {
+        "id": "milano-toilet.jpg",
+        "name": "Milano Toilet",
+        "priceEUR": 180,
+        "description": "",
+        "imgSrc": "../img/products/milano-toilet.jpg",
+        "tags": ["bathroom", "toilet"]
+    },
+    {
+        "id": "mirinda-towel-holder",
+        "name": "Mirinda Tower Holder",
+        "priceEUR": 23,
+        "description": "",
+        "imgSrc": "../img/products/mirinda-towel-holder.jpg",
+        "tags": ["bathroom", "accesories"]
+    },
+    {
+        "id": "miza-wall-storage-cabinet",
+        "name": "Miza Wall Cabinet",
+        "priceEUR": 160,
+        "description": "",
+        "imgSrc": "../img/products/miza-wall-storage-cabinet.jpg",
+        "tags": ["bathroom", "storage"]
+    },
+    {
+        "id": "royal-bathtub",
+        "name": "Royal Bathtub",
+        "priceEUR": 420,
+        "description": "",
+        "imgSrc": "../img/products/royal-bathtub.jpg",
+        "tags": ["bathroom", "bathtub"]
+    },
+    {
+        "id": "royal-gold-toilet",
+        "name": "Royal Gold Toilet",
+        "priceEUR": 650,
+        "description": "",
+        "imgSrc": "../img/products/royal-gold-toilet.jpg",
+        "tags": ["bathroom", "toilet"]
+    },
+    {
+        "id": "shark-bathtub",
+        "name": "Shark Bathtub",
+        "priceEUR": 310,
+        "description": "",
+        "imgSrc": "../img/products/shark-bathtub.avif",
+        "tags": ["bathroom", "bathtub"]
+    },
+    {
+        "id": "shower-soap-holder",
+        "name": "Shower Soap Holder",
+        "priceEUR": 15,
+        "description": "",
+        "imgSrc": "../img/products/shower-soap-holder.jpg",
+        "tags": ["bathroom", "accesories"]
+    },
+    {
+        "id": "tallboy-bathroom-wall-cabinet",
+        "name": "Tallboy Bathroom Wall Cabinet",
+        "priceEUR": 75,
+        "description": "",
+        "imgSrc": "../img/products/tallboy-bathroom-wall-cabinet.webp",
+        "tags": ["bathroom", "storage"]
+    },
+    {
+        "id": "ultra-granite-sink",
+        "name": "Ultra Granite Sink",
+        "priceEUR": 145,
+        "description": "",
+        "imgSrc": "../img/products/ultra-granite-sink.webp",
+        "tags": ["bathroom", "sink"]
+    },
+    {
+        "id": "vintage-bathtub",
+        "name": "Vintage Bathtub",
+        "priceEUR": 145,
+        "description": "",
+        "imgSrc": "../img/products/vintage-bathtub.jpg",
+        "tags": ["bathroom", "bathtub"]
+    },
+    {
+        "id": "waterfall-sink",
+        "name": "Waterfall Sink",
+        "priceEUR": 135,
+        "description": "",
+        "imgSrc": "../img/products/waterfall-sink.jpg",
+        "tags": ["bathroom", "sink"]
     }
 ]
