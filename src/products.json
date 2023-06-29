@@ -61,7 +61,7 @@
         "priceEUR": 79,
         "description": "",
         "imgSrc": "../img/products/amanda-shelves.jpg",
-        "tags": ["bathroom", "living", "storage"]
+        "tags": ["bathroom", "bathroom-fixtures", "living", "storage"]
     },
     {
         "id": "box-nightstand",
@@ -189,7 +189,7 @@
         "priceEUR": 135,
         "description": "",
         "imgSrc": "../img/products/brockton-bamboo-bathroom-accesories.jpg",
-        "tags": ["bathroom", "storage", "accesories"]
+        "tags": ["bathroom", "bathroom-fixtures", "storage", "accesories"]
     },
     {
         "id": "evo-toilet",
@@ -197,7 +197,7 @@
         "priceEUR": 160,
         "description": "",
         "imgSrc": "../img/products/evo-toilet.jpg",
-        "tags": ["bathroom", "toilet"]
+        "tags": ["bathroom", "bathroom-fixtures", "toilet"]
     },
     {
         "id": "cast-iron-farm-sink",
@@ -205,7 +205,7 @@
         "priceEUR": 190,
         "description": "",
         "imgSrc": "../img/products/cast-iron-farm-sink.webp",
-        "tags": ["bathroom", "sink"]
+        "tags": ["bathroom", "bathroom-fixtures", "sink"]
     },
     {
         "id": "ceramic-bathroom-5-set",
@@ -213,7 +213,7 @@
         "priceEUR": 30,
         "description": "",
         "imgSrc": "../img/products/ceramic-bathroom-5-set.webp",
-        "tags": ["bathroom", "sink"]
+        "tags": ["bathroom", "bathroom-fixtures", "sink"]
     },
     {
         "id": "charlotte-toilet",
@@ -221,7 +221,7 @@
         "priceEUR": 210,
         "description": "",
         "imgSrc": "../img/products/charlotte-toilet.jpg",
-        "tags": ["bathroom", "toilet"]
+        "tags": ["bathroom", "bathroom-fixtures", "toilet"]
     },
     {
         "id": "coughton-tallboy-cabinet",
@@ -229,7 +229,7 @@
         "priceEUR": 80,
         "description": "",
         "imgSrc": "../img/products/coughton-tallboy-cabinet.webp",
-        "tags": ["bathroom", "storage"]
+        "tags": ["bathroom", "bathroom-fixtures", "storage"]
     },
     {
         "id": "grohe-shower",
@@ -237,7 +237,7 @@
         "priceEUR": 40,
         "description": "",
         "imgSrc": "../img/products/grohe-shower.png",
-        "tags": ["bathroom", "shower"]
+        "tags": ["bathroom", "bathroom-fixtures", "shower"]
     },
     {
         "id": "joe-sink",
@@ -245,7 +245,7 @@
         "priceEUR": 90,
         "description": "",
         "imgSrc": "../img/products/joe-sink.jpg",
-        "tags": ["bathroom", "sink"]
+        "tags": ["bathroom", "bathroom-fixtures", "sink"]
     },
     {
         "id": "layla-bathtub",
@@ -253,7 +253,7 @@
         "priceEUR": 400,
         "description": "",
         "imgSrc": "../img/products/layla-bathtub.webp",
-        "tags": ["bathroom", "bathtub"]
+        "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
     },
     {
         "id": "matt-black-shower",
@@ -261,7 +261,7 @@
         "priceEUR": 140,
         "description": "",
         "imgSrc": "../img/products/matt-black-shower.jpg",
-        "tags": ["bathroom", "shower"]
+        "tags": ["bathroom", "bathroom-fixtures", "shower"]
     },
     {
         "id": "milano-toilet.jpg",
@@ -269,7 +269,7 @@
         "priceEUR": 180,
         "description": "",
         "imgSrc": "../img/products/milano-toilet.jpg",
-        "tags": ["bathroom", "toilet"]
+        "tags": ["bathroom", "bathroom-fixtures", "toilet"]
     },
     {
         "id": "mirinda-towel-holder",
@@ -285,7 +285,7 @@
         "priceEUR": 160,
         "description": "",
         "imgSrc": "../img/products/miza-wall-storage-cabinet.jpg",
-        "tags": ["bathroom", "storage"]
+        "tags": ["bathroom", "storage", "furniture"]
     },
     {
         "id": "royal-bathtub",
@@ -293,7 +293,7 @@
         "priceEUR": 420,
         "description": "",
         "imgSrc": "../img/products/royal-bathtub.jpg",
-        "tags": ["bathroom", "bathtub"]
+        "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
     },
     {
         "id": "royal-gold-toilet",
@@ -301,7 +301,7 @@
         "priceEUR": 1050,
         "description": "",
         "imgSrc": "../img/products/royal-gold-toilet.jpg",
-        "tags": ["bathroom", "toilet"]
+        "tags": ["bathroom", "bathroom-fixtures", "toilet"]
     },
     {
         "id": "shark-bathtub",
@@ -309,7 +309,7 @@
         "priceEUR": 310,
         "description": "",
         "imgSrc": "../img/products/shark-bathtub.avif",
-        "tags": ["bathroom", "bathtub"]
+        "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
     },
     {
         "id": "shower-soap-holder",
@@ -325,7 +325,7 @@
         "priceEUR": 75,
         "description": "",
         "imgSrc": "../img/products/tallboy-bathroom-wall-cabinet.webp",
-        "tags": ["bathroom", "storage"]
+        "tags": ["bathroom", "storage", "furniture"]
     },
     {
         "id": "ultra-granite-sink",
@@ -333,7 +333,7 @@
         "priceEUR": 145,
         "description": "",
         "imgSrc": "../img/products/ultra-granite-sink.webp",
-        "tags": ["bathroom", "sink"]
+        "tags": ["bathroom", "bathroom-fixtures", "sink"]
     },
     {
         "id": "vintage-bathtub",
@@ -341,7 +341,7 @@
         "priceEUR": 145,
         "description": "",
         "imgSrc": "../img/products/vintage-bathtub.jpg",
-        "tags": ["bathroom", "bathtub"]
+        "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
     },
     {
         "id": "waterfall-sink",
@@ -349,7 +349,7 @@
         "priceEUR": 135,
         "description": "",
         "imgSrc": "../img/products/waterfall-sink.jpg",
-        "tags": ["bathroom", "sink"]
+        "tags": ["bathroom", "bathroom-fixtures", "sink"]
     },
     {
         "id": "ergo-office-chair",
