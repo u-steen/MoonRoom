@@ -212,6 +212,7 @@ footer {
     grid-column: 3;
     grid-row: 3;
     margin: 0 auto;
+    display: flex;
 }
 
 #footerSocials > img {

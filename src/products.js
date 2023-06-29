@@ -152,6 +152,16 @@ function generateProduct(id, name, price, imgSrc, container) {
     const pBtn = document.createElement('button');
     pBtn.innerText = 'Add to Cart';
     product.appendChild(pBtn);
+
+    const pViewPageDiv = document.createElement('div');
+    pViewPageDiv.setAttribute('class', 'pViewPageDiv');
+    product.appendChild(pViewPageDiv);
+    const viewPage = document.createElement('a');
+    viewPage.setAttribute('href', './product.html?product=' + id);
+    pViewPageDiv.appendChild(viewPage);
+    const viewPageBtn = document.createElement('button');
+    viewPageBtn.innerText = 'View Page';
+    viewPage.appendChild(viewPageBtn);
 }
 
 // Function that returns the page bar html object

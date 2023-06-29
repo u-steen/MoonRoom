@@ -112,11 +112,23 @@
     display: none;
     position: absolute;
     width: 100px;
-    height: 50px;
+    height: 30px;
     margin: 0 auto;
     left: 0;
     right: 0;
     top: 140px;
+    border: 0;
+}
+
+.pViewPageDiv {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50px;
     border: 0;
 }
 
@@ -126,7 +138,8 @@
 
 .product:hover h2,
 .product:hover h3,
-.product:hover button {
+.product:hover button,
+.product:hover .pViewPageDiv {
     display: table-cell;
 }
 
