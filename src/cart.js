@@ -6,24 +6,32 @@ window.onload = () => {
     // Get the current products from cart
     const productsInCart = localStorage.getItem('productsInCart');
     const productsInCartArr = JSON.parse(productsInCart);
-    loadItems(productsInCartArr);
+    loadItems(productsInCartArr, productsContainer);
 };
 
-async function loadItems(productsArray) {
+async function loadItems(productsArray, container) {
     const fetchedData = await fetch('products.json');
     const data = await fetchedData.json();
     console.log(data);
-    productsArray.every((itemId) => {
-        data.forEach((el) => {
-            if (el.id === itemId) {
-                createItem(el.imgSrc, el.name, el.priceEUR, productsContainer);
+    productsArray.forEach((obj) => {
+        console.log(obj);
+        data.every((dataEl) => {
+            if (obj.id === dataEl.id) {
+                createItem(
+                    dataEl.imgSrc,
+                    dataEl.name,
+                    obj.cnt,
+                    dataEl.priceEUR,
+                    container
+                );
+                return false;
             }
+            return true;
         });
-        return true;
     });
 }
 
-function createItem(imgSrc, name, price, container) {
+function createItem(imgSrc, name, cnt, price, container) {
     // Add Item to container
     const item = document.createElement('div');
     item.classList.add('item');
@@ -46,6 +54,17 @@ function createItem(imgSrc, name, price, container) {
     nameText.innerText = name;
     nameDiv.append(nameText);
 
+    // Append ItemCount to Item
+    const itemCntDiv = document.createElement('div');
+    itemCntDiv.classList.add('itemCntDiv');
+    item.append(itemCntDiv);
+    const itemCnt = document.createElement('input');
+    itemCnt.classList.add('itemCnt');
+    itemCnt.setAttribute('value', cnt);
+    itemCnt.setAttribute('type', 'number');
+    itemCnt.addEventListener('change', updateItmCountFromInput);
+    itemCntDiv.append(itemCnt);
+
     // Append Delete Button to Item
     const deleteBtn = document.createElement('div');
     deleteBtn.classList.add('productDelete');
@@ -62,4 +81,12 @@ function createItem(imgSrc, name, price, container) {
     const priceText = document.createElement('h2');
     priceText.innerText = price + ' EUR';
     priceDiv.append(priceText);
+}
+
+async function updateItmCountFromInput(newInput) {
+    const newCnt = newInput.target.value;
+    const fetchedFata = await fetch('products.json');
+    const data = fetchedFata.json();
+    // Search in localStorage for the selected input
+    // TODO
 }

@@ -1,6 +1,7 @@
 const ITEMSPERPAGE = 20; // 4 by 5 gird
 productsUrl = 'products.json';
 window.onload = () => {
+    // localStorage.clear();
     const products = document.getElementById('products');
     if (!products) {
         console.log('There was an error selectring products!');
@@ -274,13 +275,39 @@ function addToCart(id) {
     const productsInCart = localStorage.getItem('productsInCart');
     // console.log('productsInCart', productsInCart);
     const productsArray = JSON.parse(productsInCart);
-    // console.log('productsArray', productsArray);
-    // Put product clicked in cart
-    productsArray.push(id);
+
+    if (checkItemInProducts(id, productsArray)) {
+        increaseCount(id, productsArray);
+    } else {
+        // If the product doesn't exist, insert is with cnt 1
+        productsArray.push({ id: id, cnt: 1 });
+    }
+    console.log('productsArray', productsArray);
+
+    // if the product already exists, bump up cnt
+    // else add the product
+
     // console.log('Araay after push', productsArray);
     // console.log('productsInCart will be ', JSON.stringify(productsArray));
-    // Put the array back in localStoraga
+    // Put the array back in localStorage
     localStorage.setItem('productsInCart', JSON.stringify(productsArray));
-    // TODO:
-    // updateCartCount();
+}
+
+// Checks if an item is already in products
+function checkItemInProducts(itemId, allItems) {
+    let found = false;
+    allItems.forEach((el) => {
+        if (itemId === el.id) {
+            found = true;
+        }
+    });
+    return found;
+}
+
+function increaseCount(id, productsArray) {
+    productsArray.forEach((el) => {
+        if (el.id === id) {
+            el.cnt++;
+        }
+    });
 }
