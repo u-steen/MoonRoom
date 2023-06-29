@@ -8,7 +8,7 @@ window.onload = () => {
     // Get url params
     const urlQuery = window.location.search;
     const urlParams = new URLSearchParams(urlQuery);
-    console.log(urlParams);
+    // console.log(urlParams);
     //      Page
     let page;
     if (urlParams.has('page')) {
@@ -24,7 +24,6 @@ window.onload = () => {
         tag = 'all';
     }
     const selectedTag = document.getElementById(tag);
-    console.log(selectedTag);
     selectedTag.setAttribute('selected', 'selected');
     //      Order By
     let order;
@@ -34,7 +33,6 @@ window.onload = () => {
         order = 'alphabetic';
     }
     const selectedOrder = document.getElementById(order);
-    console.log(selectedOrder);
     selectedOrder.setAttribute('selected', 'selected');
 
     const tagActive = document.getElementById('tag');
@@ -151,6 +149,9 @@ function generateProduct(id, name, price, imgSrc, container) {
 
     const pBtn = document.createElement('button');
     pBtn.innerText = 'Add to Cart';
+    pBtn.addEventListener('click', () => {
+        addToCart(id);
+    });
     product.appendChild(pBtn);
 
     const pViewPageDiv = document.createElement('div');
@@ -262,4 +263,24 @@ function createPageBar(currPage, maxPage, appliedTag, appliedOrder) {
     }
 
     return pageArr;
+}
+
+function addToCart(id) {
+    // If storage in local storage does not exist, create it
+    if (!localStorage.getItem('productsInCart')) {
+        localStorage.setItem('productsInCart', '[]');
+    }
+    // Get the current products from cart
+    const productsInCart = localStorage.getItem('productsInCart');
+    // console.log('productsInCart', productsInCart);
+    const productsArray = JSON.parse(productsInCart);
+    // console.log('productsArray', productsArray);
+    // Put product clicked in cart
+    productsArray.push(id);
+    // console.log('Araay after push', productsArray);
+    // console.log('productsInCart will be ', JSON.stringify(productsArray));
+    // Put the array back in localStoraga
+    localStorage.setItem('productsInCart', JSON.stringify(productsArray));
+    // TODO:
+    // updateCartCount();
 }
