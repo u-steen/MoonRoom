@@ -1,99 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>MoonRoom</title>
-        <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-        <link rel="stylesheet" href="cssreset.css" />
-        <link rel="stylesheet" href="generic.css" />
-        <link rel="stylesheet" href="products.css" />
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
-            rel="stylesheet"
-        />
-        <!-- For importing the header into multiple pages -->
-        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-        <script src="generic.js"></script>
-        <script src="products.js"></script>
-    </head>
-    <body>
-        <header></header>
-        <div id="container">
-            <section id="productsBar">
-                <h2>Products</h2>
-                <div id="buttonsContainer">
-                    <div id="filtersContainer">
-                        <label for="tag">Choose products by tag</label>
-                        <select id="tag" name="tag">
-                            <option value="all" id="all">All</option>
-                            <optgroup label="Rooms">
-                                <option value="bedroom" id="bedroom">
-                                    Bedroom
-                                </option>
-                                <option value="living" id="living">
-                                    Living
-                                </option>
-                                <option
-                                    value="kitchen-dining"
-                                    id="kitchen-dining"
-                                >
-                                    Kitchen & Dining
-                                </option>
-                                <option value="bathroom" id="bathroom">
-                                    Bathroom
-                                </option>
-                                <option value="office" id="office">
-                                    Office
-                                </option>
-                                <option value="garden" id="garden">
-                                    Garden
-                                </option>
-                            </optgroup>
-                            <optgroup label="Function">
-                                <option value="storage" id="storage">
-                                    Storage
-                                </option>
-                                <option value="furniture" id="furniture">
-                                    Furniture
-                                </option>
-                                <option value="lights" id="lights">
-                                    Lights
-                                </option>
-                                <option value="bathtub" id="bathtub">
-                                    Bathtub
-                                </option>
-                                <option value="sink" id="sink">Sink</option>
-                                <option value="toilet" id="toilet">
-                                    Toilet
-                                </option>
-                                <option value="accesories" id="accesories">
-                                    Accesories
-                                </option>
-                            </optgroup>
-                        </select>
-                    </div>
+   <head>
+      <title>MoonRoom</title>
+      <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+      <link rel="stylesheet" href="cssreset.css" />
+      <link rel="stylesheet" href="generic.css" />
+      <link rel="stylesheet" href="products.css" />
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+         rel="stylesheet"
+      />
+      <!-- For importing the header into multiple pages -->
+      <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+      <script src="generic.js"></script>
+      <script src="products.js"></script>
+   </head>
+   <body>
+      <header></header>
+      <div id="container">
+         <section id="productsBar">
+            <h2>Products</h2>
+            <div id="buttonsContainer">
+               <div id="filtersContainer">
+                  <label for="tag">Choose products by tag</label>
+                  <select id="tag" name="tag">
+                     <option value="all" id="all">All</option>
+                     <optgroup label="Rooms">
+                        <option value="bedroom" id="bedroom">Bedroom</option>
+                        <option value="living" id="living">Living</option>
+                        <option value="kitchen-dining" id="kitchen-dining">
+                           Kitchen & Dining
+                        </option>
+                        <option value="bathroom" id="bathroom">Bathroom</option>
+                        <option value="office" id="office">Office</option>
+                        <option value="garden" id="garden">Garden</option>
+                     </optgroup>
+                     <optgroup label="Function">
+                        <option value="storage" id="storage">Storage</option>
+                        <option value="furniture" id="furniture">
+                           Furniture
+                        </option>
+                        <option value="lights" id="lights">Lights</option>
+                        <option value="bathtub" id="bathtub">Bathtub</option>
+                        <option value="sink" id="sink">Sink</option>
+                        <option value="toilet" id="toilet">Toilet</option>
+                        <option value="accesories" id="accesories">
+                           Accesories
+                        </option>
+                     </optgroup>
+                  </select>
+               </div>
 
-                    <div id="orderByContainer">
-                        <label for="orderBy">Order by</label>
-                        <select id="orderBy" name="orderBy">
-                            <option value="alphabetic" id="alphabetic" selected>
-                                Name: Alphabetic
-                            </option>
-                            <option value="priceAsc" id="priceAsc">
-                                Price: Low -> High
-                            </option>
-                            <option value="priceDesc" id="priceDesc">
-                                Price: High -> Low
-                            </option>
-                        </select>
-                    </div>
-                </div>
-            </section>
-            <section id="products"></section>
-            <div id="pageBar"></div>
-        </div>
-        <footer></footer>
-    </body>
+               <div id="orderByContainer">
+                  <label for="orderBy">Order by</label>
+                  <select id="orderBy" name="orderBy">
+                     <option value="alphabetic" id="alphabetic" selected>
+                        Name: Alphabetic
+                     </option>
+                     <option value="priceAsc" id="priceAsc">
+                        Price: Low -> High
+                     </option>
+                     <option value="priceDesc" id="priceDesc">
+                        Price: High -> Low
+                     </option>
+                  </select>
+               </div>
+            </div>
+         </section>
+         <section id="products"></section>
+         <div id="pageBar"></div>
+      </div>
+      <footer></footer>
+   </body>
 </html>
