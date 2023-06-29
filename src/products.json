@@ -298,7 +298,7 @@
     {
         "id": "royal-gold-toilet",
         "name": "Royal Gold Toilet",
-        "priceEUR": 650,
+        "priceEUR": 1050,
         "description": "",
         "imgSrc": "../img/products/royal-gold-toilet.jpg",
         "tags": ["bathroom", "toilet"]
@@ -350,5 +350,109 @@
         "description": "",
         "imgSrc": "../img/products/waterfall-sink.jpg",
         "tags": ["bathroom", "sink"]
+    },
+    {
+        "id": "ergo-office-chair",
+        "name": "Ergo Office Chair",
+        "priceEUR": 155,
+        "description": "Ergonomic office chair great for posture",
+        "imgSrc": "../img/products/ergo-office-chair.webp",
+        "tags": ["office", "furniture"]
+    },
+    {
+        "id": "factory-desk-lamp",
+        "name": "Factory Desk lamp",
+        "priceEUR": 40,
+        "description": "Sleek lamp.",
+        "imgSrc": "../img/products/factory-desk-lamp.webp",
+        "tags": ["office", "living", "bedroom", "lights"]
+    },
+    {
+        "id": "fine-line-drawers",
+        "name": "Fine Line Drawers",
+        "priceEUR": 90,
+        "description": "",
+        "imgSrc": "../img/products/fine-line-drawers.webp",
+        "tags": ["office", "storage"]
+    },
+    {
+        "id": "flexible-desk-lamp",
+        "name": "Flexible Desk Lamp",
+        "priceEUR": 25,
+        "description": "",
+        "imgSrc": "../img/products/flexible-desk-lamp.jpg",
+        "tags": ["office", "lights"]
+    },
+    {
+        "id": "geo-desk-chair",
+        "name": "Geo Desk Chair",
+        "priceEUR": 110,
+        "description": "",
+        "imgSrc": "../img/products/geo-desk-chair.jpg",
+        "tags": ["office", "furniture"]
+    },
+    {
+        "id": "hally-office-chair",
+        "name": "Hally Office Chiar",
+        "priceEUR": 165,
+        "description": "",
+        "imgSrc": "../img/products/hally-office-chiar.webp",
+        "tags": ["office", "furniture"]
+    },
+    {
+        "id": "moncton-desk",
+        "name": "Moncton Desk",
+        "priceEUR": 190,
+        "description": "",
+        "imgSrc": "../img/products/moncton-desk.jpg",
+        "tags": ["office", "furniture"]
+    },
+    {
+        "id": "office-trash-can-round",
+        "name": "Office Trash Can Round",
+        "priceEUR": 32,
+        "description": "",
+        "imgSrc": "../img/products/office-trash-can-round.jpg",
+        "tags": ["office", "accesories"]
+    },
+    {
+        "id": "office-trash-can-square",
+        "name": "Office Trash Can Square",
+        "priceEUR": 32,
+        "description": "",
+        "imgSrc": "../img/products/office-trash-can-square.jpg",
+        "tags": ["office", "accesories"]
+    },
+    {
+        "id": "ranarp-desk-lamp",
+        "name": "Ranarp Desk Lamp",
+        "priceEUR": 20,
+        "description": "",
+        "imgSrc": "../img/products/ranarp-desk-lamp.avif",
+        "tags": ["office", "lights"]
+    },
+    {
+        "id": "the-solid-desk",
+        "name": "\"The SOLID\" Desk",
+        "priceEUR": 410,
+        "description": "",
+        "imgSrc": "../img/products/the-solid-desk.webp",
+        "tags": ["office", "furniture"]
+    },
+    {
+        "id": "walnut-filing-cabinet",
+        "name": "Walnut Filing Cabinet",
+        "priceEUR": 95,
+        "description": "",
+        "imgSrc": "../img/products/walnut-filing-cabinet.jpg",
+        "tags": ["office", "furniture", "storage"]
+    },
+    {
+        "id": "wooden-corner-desk",
+        "name": "Wooden Corner Desk",
+        "priceEUR": 240,
+        "description": "",
+        "imgSrc": "../img/products/wooden-corner-desk.webp",
+        "tags": ["office", "furniture"]
     }
 ]
