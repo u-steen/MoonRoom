@@ -30,6 +30,7 @@ async function loadItems(productsArray, container) {
             return true;
         });
     });
+    updateSubtotalPrice();
 }
 
 function createItem(id, imgSrc, name, cnt, price, container) {
@@ -65,6 +66,8 @@ function createItem(id, imgSrc, name, cnt, price, container) {
     itemCnt.setAttribute('type', 'number');
     itemCnt.addEventListener('change', (e) => {
         updateItmCountFromInput(id, e.target.value);
+        priceText.innerText = getPriceString(price, e.target.value);
+        updateSubtotalPrice();
     });
     itemCntDiv.append(itemCnt);
 
@@ -90,7 +93,7 @@ function createItem(id, imgSrc, name, cnt, price, container) {
     priceDiv.classList.add('productPrice');
     item.append(priceDiv);
     const priceText = document.createElement('h2');
-    priceText.innerText = price + ' EUR';
+    priceText.innerText = getPriceString(price, itemCnt.value);
     priceDiv.append(priceText);
 }
 
@@ -123,4 +126,42 @@ function deleteItem(id) {
     });
     localStorage.setItem('productsInCart', JSON.stringify(cartArray));
     location.reload();
+}
+
+function getPriceString(pricePerItem, cnt) {
+    let string = '';
+    if (cnt > 1) {
+        string += pricePerItem + ' EUR * ' + cnt + '\n';
+        const total = getItemTotalPrice(pricePerItem, cnt);
+        console.log(total);
+        string += total + ' EUR';
+        return string;
+    }
+    return pricePerItem + ' EUR';
+}
+
+async function updateSubtotalPrice() {
+    let price = 0;
+    const fetchedData = await fetch('products.json');
+    const data = await fetchedData.json();
+    console.log(data);
+
+    const productsInCart = JSON.parse(localStorage.getItem('productsInCart'));
+    console.log(productsInCart);
+
+    productsInCart.forEach((el) => {
+        data.every((dataEl) => {
+            if (dataEl.id === el.id) {
+                price += dataEl.priceEUR * el.cnt;
+            }
+            return true;
+        });
+    });
+
+    const subtotalPrice = document.getElementById('subtotalPrice');
+    subtotalPrice.innerText = price + ' EUR';
+}
+
+function getItemTotalPrice(pricePerItem, cnt) {
+    return parseFloat(pricePerItem) * parseInt(cnt);
 }
