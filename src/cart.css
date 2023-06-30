@@ -65,6 +65,11 @@
     display: flex;
     align-items: center;
 }
+
+.delImgDiv:hover {
+    background-color: var(--moonGray);
+    cursor: pointer;
+}
 .productPrice {
     width: 100px;
     display: flex;

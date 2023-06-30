@@ -18,6 +18,7 @@ async function loadItems(productsArray, container) {
         data.every((dataEl) => {
             if (obj.id === dataEl.id) {
                 createItem(
+                    dataEl.id,
                     dataEl.imgSrc,
                     dataEl.name,
                     obj.cnt,
@@ -31,7 +32,7 @@ async function loadItems(productsArray, container) {
     });
 }
 
-function createItem(imgSrc, name, cnt, price, container) {
+function createItem(id, imgSrc, name, cnt, price, container) {
     // Add Item to container
     const item = document.createElement('div');
     item.classList.add('item');
@@ -62,17 +63,27 @@ function createItem(imgSrc, name, cnt, price, container) {
     itemCnt.classList.add('itemCnt');
     itemCnt.setAttribute('value', cnt);
     itemCnt.setAttribute('type', 'number');
-    itemCnt.addEventListener('change', updateItmCountFromInput);
+    itemCnt.addEventListener('change', (e) => {
+        updateItmCountFromInput(id, e.target.value);
+    });
     itemCntDiv.append(itemCnt);
 
     // Append Delete Button to Item
-    const deleteBtn = document.createElement('div');
-    deleteBtn.classList.add('productDelete');
-    item.append(deleteBtn);
-    const delBtnImg = document.createElement('img');
-    delBtnImg.setAttribute('src', '../img/deleteitem.svg');
-    delBtnImg.setAttribute('alt', 'delete-button');
-    deleteBtn.appendChild(delBtnImg);
+    const deleteDiv = document.createElement('div');
+    deleteDiv.classList.add('productDelete');
+    item.appendChild(deleteDiv);
+
+    const delImgDiv = document.createElement('div');
+    delImgDiv.classList.add('delImgDiv');
+    deleteDiv.appendChild(delImgDiv);
+
+    const delImg = document.createElement('img');
+    delImg.setAttribute('src', '../img/deleteitem.svg');
+    delImg.setAttribute('alt', 'delete-button');
+    delImg.addEventListener('click', () => {
+        deleteItem(id);
+    });
+    delImgDiv.appendChild(delImg);
 
     // Append Price to Item
     const priceDiv = document.createElement('div');
@@ -83,10 +94,33 @@ function createItem(imgSrc, name, cnt, price, container) {
     priceDiv.append(priceText);
 }
 
-async function updateItmCountFromInput(newInput) {
-    const newCnt = newInput.target.value;
-    const fetchedFata = await fetch('products.json');
-    const data = fetchedFata.json();
-    // Search in localStorage for the selected input
-    // TODO
+async function updateItmCountFromInput(id, newInput) {
+    newInput = parseInt(newInput);
+    console.log(id, newInput);
+    if (newInput === 0) {
+        deleteItem(id);
+    } else {
+        const cartArray = JSON.parse(localStorage.getItem('productsInCart'));
+        cartArray.forEach((el) => {
+            if (el.id === id) {
+                el.cnt = newInput;
+            }
+        });
+        console.log(cartArray);
+        localStorage.setItem('productsInCart', JSON.stringify(cartArray));
+    }
+}
+
+function deleteItem(id) {
+    console.log('Deleting', id);
+    const cartArray = JSON.parse(localStorage.getItem('productsInCart'));
+    alert('You are going to delete:', id);
+    console.log(cartArray);
+    cartArray.forEach((el) => {
+        if (el.id === id) {
+            cartArray.splice(cartArray.indexOf(el), 1);
+        }
+    });
+    localStorage.setItem('productsInCart', JSON.stringify(cartArray));
+    location.reload();
 }
