@@ -1,458 +1,538 @@
 [
-    {
-        "id": "wooden-chair",
-        "name": "Wooden Chair",
-        "priceEUR": 70,
-        "description": "Wooden chair that can be used inside and outside",
-        "imgSrc": "../img/products/chiar1.jpg",
-        "tags": ["garden", "kitchen-dining", "furniture"]
-    },
-    {
-        "id": "ricardo-chair",
-        "name": "Ricardo Chair",
-        "priceEUR": 105,
-        "description": "Perfect for a cozy living room or kitchen",
-        "imgSrc": "../img/products/chiar2.jpg",
-        "tags": ["kitchen-dining", "living", "furniture"]
-    },
-    {
-        "id": "alice-queen-bed",
-        "name": "Alice Queen Bed",
-        "priceEUR": 330,
-        "description": "Queen bed perfect for a lovely couple",
-        "imgSrc": "../img/products/alice-queen-bed.jpg",
-        "tags": ["bedroom", "furniture"]
-    },
-    {
-        "id": "sun-bed",
-        "name": "Sun Bed",
-        "priceEUR": 100,
-        "description": "Bed for a kid or small adult.",
-        "imgSrc": "../img/products/sun-bed.jpg",
-        "tags": ["bedroom", "furniture"]
-    },
-    {
-        "id": "container-bed",
-        "name": "Container bed",
-        "priceEUR": 480,
-        "description": "King size bed with a storage compartment.",
-        "imgSrc": "../img/products/container-bed.jpg",
-        "tags": ["bedroom", "furniture"]
-    },
-    {
-        "id": "adam-bookshelf",
-        "name": "Adam Bookshelf",
-        "priceEUR": 220,
-        "description": "",
-        "imgSrc": "../img/products/adam-bookshelf.jpg",
-        "tags": ["bedroom", "living", "furniture"]
-    },
-    {
-        "id": "alex-helves",
-        "name": "Alex Shelves",
-        "priceEUR": 35,
-        "description": "",
-        "imgSrc": "../img/products/alex-shelf.jpg",
-        "tags": ["bedroom", "storage"]
-    },
-    {
-        "id": "amanda-shelves",
-        "name": "Amanda Shelves",
-        "priceEUR": 79,
-        "description": "",
-        "imgSrc": "../img/products/amanda-shelves.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "living", "storage"]
-    },
-    {
-        "id": "box-nightstand",
-        "name": "Box Nightstand",
-        "priceEUR": 105,
-        "description": "",
-        "imgSrc": "../img/products/box-nightstand.webp",
-        "tags": ["bedroom", "furniture"]
-    },
-    {
-        "id": "brooklyn-lamp",
-        "name": "Brooklyn Lamp",
-        "priceEUR": 45,
-        "description": "",
-        "imgSrc": "../img/products/brooklyn-lamp.webp",
-        "tags": ["bedroom", "lights"]
-    },
-    {
-        "id": "cage-lamp",
-        "name": "Cage Lamp",
-        "priceEUR": 59,
-        "description": "",
-        "imgSrc": "../img/products/cage-lamp.jpg",
-        "tags": ["bedroom", "living", "lights"]
-    },
-    {
-        "id": "display-closet",
-        "name": "Display Closet",
-        "priceEUR": 320,
-        "description": "",
-        "imgSrc": "../img/products/display-closet.jpg",
-        "tags": ["bedroom", "storage", "furniture"]
-    },
-    {
-        "id": "double-wooden-dresser",
-        "name": "Double Wooden Dresser",
-        "priceEUR": 240,
-        "description": "",
-        "imgSrc": "../img/products/double-wooden-dresser.jpg",
-        "tags": ["bedroom", "furniture", "storage"]
-    },
-    {
-        "id": "emmerson-shelves",
-        "name": "Emmerson Shelves",
-        "priceEUR": 70,
-        "description": "",
-        "imgSrc": "../img/products/emmerson-shelves.jpg",
-        "tags": ["kitchen-dining", "storage"]
-    },
-    {
-        "id": "gia-dresser",
-        "name": "Gia Dresser",
-        "priceEUR": 129,
-        "description": "",
-        "imgSrc": "../img/products/gia-dresser.jpg",
-        "tags": ["bedroom", "living", "storage", "furniture"]
-    },
-    {
-        "id": "harlow-nightstand",
-        "name": "Harlow Nightstand",
-        "priceEUR": 95,
-        "description": "",
-        "imgSrc": "../img/products/harlow-nightstand.webp",
-        "tags": ["bedroom", "furniture"]
-    },
-    {
-        "id": "industrila-nightstand",
-        "name": "Industrial Nightstand",
-        "priceEUR": 60,
-        "description": "",
-        "imgSrc": "../img/products/industrial-nightstand.jpg",
-        "tags": ["bedroom", "furniture"]
-    },
-    {
-        "id": "ledder-bookshelf",
-        "name": "Ledder Bookshelf",
-        "priceEUR": 110,
-        "description": "",
-        "imgSrc": "../img/products/ledder-bookshelf.jpg",
-        "tags": ["living", "storage", "furniture"]
-    },
-    {
-        "id": "ledder-shelf",
-        "name": "Ledder Shelf",
-        "priceEUR": 89,
-        "description": "",
-        "imgSrc": "../img/products/ledder-shelf.jpg",
-        "tags": ["living", "storage", "furniture"]
-    },
-    {
-        "id": "marte-dresser",
-        "name": "Marte Dresser",
-        "priceEUR": 120,
-        "description": "",
-        "imgSrc": "../img/products/marte-dresser.webp",
-        "tags": ["bedroom", "storage", "furniture"]
-    },
-    {
-        "id": "stainless-steel-floor-lamp",
-        "name": "Stainless Steel Floor Lamp",
-        "priceEUR": 60,
-        "description": "",
-        "imgSrc": "../img/products/stainless-steel-floor-lamp.jpg",
-        "tags": ["bedroom", "living", "lights"]
-    },
-    {
-        "id": "tower-bookshelf",
-        "name": "Tilted Tower Bookshelf",
-        "priceEUR": 390,
-        "description": "",
-        "imgSrc": "../img/products/tower-bookshelf.webp",
-        "tags": ["bedroom", "furniture", "storage", "furniture"]
-    },
-    {
-        "id": "vase-lamp",
-        "name": "Vase Lamp",
-        "priceEUR": 70,
-        "description": "",
-        "imgSrc": "../img/products/vase-lamp.jpg",
-        "tags": ["bedroom", "living", "lights"]
-    },
-    {
-        "id": "brockton-bamboo-bathroom-accesories",
-        "name": "Brockton Bamboo Bathroom Accesories",
-        "priceEUR": 135,
-        "description": "",
-        "imgSrc": "../img/products/brockton-bamboo-bathroom-accesories.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "storage", "accesories"]
-    },
-    {
-        "id": "evo-toilet",
-        "name": "Evo Toilet",
-        "priceEUR": 160,
-        "description": "",
-        "imgSrc": "../img/products/evo-toilet.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "toilet"]
-    },
-    {
-        "id": "cast-iron-farm-sink",
-        "name": "Cast Iron Farm Sink",
-        "priceEUR": 190,
-        "description": "",
-        "imgSrc": "../img/products/cast-iron-farm-sink.webp",
-        "tags": ["bathroom", "bathroom-fixtures", "sink"]
-    },
-    {
-        "id": "ceramic-bathroom-5-set",
-        "name": "Ceramic Bathroom 5-set",
-        "priceEUR": 30,
-        "description": "",
-        "imgSrc": "../img/products/ceramic-bathroom-5-set.webp",
-        "tags": ["bathroom", "bathroom-fixtures", "sink"]
-    },
-    {
-        "id": "charlotte-toilet",
-        "name": "Charlotte Toilet",
-        "priceEUR": 210,
-        "description": "",
-        "imgSrc": "../img/products/charlotte-toilet.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "toilet"]
-    },
-    {
-        "id": "coughton-tallboy-cabinet",
-        "name": "Coughton Tabllboy Cabinet",
-        "priceEUR": 80,
-        "description": "",
-        "imgSrc": "../img/products/coughton-tallboy-cabinet.webp",
-        "tags": ["bathroom", "bathroom-fixtures", "storage"]
-    },
-    {
-        "id": "grohe-shower",
-        "name": "Grohe Shower",
-        "priceEUR": 40,
-        "description": "",
-        "imgSrc": "../img/products/grohe-shower.png",
-        "tags": ["bathroom", "bathroom-fixtures", "shower"]
-    },
-    {
-        "id": "joe-sink",
-        "name": "Joe Sink",
-        "priceEUR": 90,
-        "description": "",
-        "imgSrc": "../img/products/joe-sink.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "sink"]
-    },
-    {
-        "id": "layla-bathtub",
-        "name": "Layla Bathtub",
-        "priceEUR": 400,
-        "description": "",
-        "imgSrc": "../img/products/layla-bathtub.webp",
-        "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
-    },
-    {
-        "id": "matt-black-shower",
-        "name": "Matt Black Shower",
-        "priceEUR": 140,
-        "description": "",
-        "imgSrc": "../img/products/matt-black-shower.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "shower"]
-    },
-    {
-        "id": "milano-toilet.jpg",
-        "name": "Milano Toilet",
-        "priceEUR": 180,
-        "description": "",
-        "imgSrc": "../img/products/milano-toilet.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "toilet"]
-    },
-    {
-        "id": "mirinda-towel-holder",
-        "name": "Mirinda Tower Holder",
-        "priceEUR": 23,
-        "description": "",
-        "imgSrc": "../img/products/mirinda-towel-holder.jpg",
-        "tags": ["bathroom", "accesories"]
-    },
-    {
-        "id": "miza-wall-storage-cabinet",
-        "name": "Miza Wall Cabinet",
-        "priceEUR": 160,
-        "description": "",
-        "imgSrc": "../img/products/miza-wall-storage-cabinet.jpg",
-        "tags": ["bathroom", "storage", "furniture"]
-    },
-    {
-        "id": "royal-bathtub",
-        "name": "Royal Bathtub",
-        "priceEUR": 420,
-        "description": "",
-        "imgSrc": "../img/products/royal-bathtub.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
-    },
-    {
-        "id": "royal-gold-toilet",
-        "name": "Royal Gold Toilet",
-        "priceEUR": 1050,
-        "description": "",
-        "imgSrc": "../img/products/royal-gold-toilet.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "toilet"]
-    },
-    {
-        "id": "shark-bathtub",
-        "name": "Shark Bathtub",
-        "priceEUR": 310,
-        "description": "",
-        "imgSrc": "../img/products/shark-bathtub.avif",
-        "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
-    },
-    {
-        "id": "shower-soap-holder",
-        "name": "Shower Soap Holder",
-        "priceEUR": 15,
-        "description": "",
-        "imgSrc": "../img/products/shower-soap-holder.jpg",
-        "tags": ["bathroom", "accesories"]
-    },
-    {
-        "id": "tallboy-bathroom-wall-cabinet",
-        "name": "Tallboy Bathroom Wall Cabinet",
-        "priceEUR": 75,
-        "description": "",
-        "imgSrc": "../img/products/tallboy-bathroom-wall-cabinet.webp",
-        "tags": ["bathroom", "storage", "furniture"]
-    },
-    {
-        "id": "ultra-granite-sink",
-        "name": "Ultra Granite Sink",
-        "priceEUR": 145,
-        "description": "",
-        "imgSrc": "../img/products/ultra-granite-sink.webp",
-        "tags": ["bathroom", "bathroom-fixtures", "sink"]
-    },
-    {
-        "id": "vintage-bathtub",
-        "name": "Vintage Bathtub",
-        "priceEUR": 145,
-        "description": "",
-        "imgSrc": "../img/products/vintage-bathtub.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
-    },
-    {
-        "id": "waterfall-sink",
-        "name": "Waterfall Sink",
-        "priceEUR": 135,
-        "description": "",
-        "imgSrc": "../img/products/waterfall-sink.jpg",
-        "tags": ["bathroom", "bathroom-fixtures", "sink"]
-    },
-    {
-        "id": "ergo-office-chair",
-        "name": "Ergo Office Chair",
-        "priceEUR": 155,
-        "description": "Ergonomic office chair great for posture",
-        "imgSrc": "../img/products/ergo-office-chair.webp",
-        "tags": ["office", "furniture"]
-    },
-    {
-        "id": "factory-desk-lamp",
-        "name": "Factory Desk lamp",
-        "priceEUR": 40,
-        "description": "Sleek lamp.",
-        "imgSrc": "../img/products/factory-desk-lamp.webp",
-        "tags": ["office", "living", "bedroom", "lights"]
-    },
-    {
-        "id": "fine-line-drawers",
-        "name": "Fine Line Drawers",
-        "priceEUR": 90,
-        "description": "",
-        "imgSrc": "../img/products/fine-line-drawers.webp",
-        "tags": ["office", "storage"]
-    },
-    {
-        "id": "flexible-desk-lamp",
-        "name": "Flexible Desk Lamp",
-        "priceEUR": 25,
-        "description": "",
-        "imgSrc": "../img/products/flexible-desk-lamp.jpg",
-        "tags": ["office", "lights"]
-    },
-    {
-        "id": "geo-desk-chair",
-        "name": "Geo Desk Chair",
-        "priceEUR": 110,
-        "description": "",
-        "imgSrc": "../img/products/geo-desk-chair.jpg",
-        "tags": ["office", "furniture"]
-    },
-    {
-        "id": "hally-office-chair",
-        "name": "Hally Office Chiar",
-        "priceEUR": 165,
-        "description": "",
-        "imgSrc": "../img/products/hally-office-chiar.webp",
-        "tags": ["office", "furniture"]
-    },
-    {
-        "id": "moncton-desk",
-        "name": "Moncton Desk",
-        "priceEUR": 190,
-        "description": "",
-        "imgSrc": "../img/products/moncton-desk.jpg",
-        "tags": ["office", "furniture"]
-    },
-    {
-        "id": "office-trash-can-round",
-        "name": "Office Trash Can Round",
-        "priceEUR": 32,
-        "description": "",
-        "imgSrc": "../img/products/office-trash-can-round.jpg",
-        "tags": ["office", "accesories"]
-    },
-    {
-        "id": "office-trash-can-square",
-        "name": "Office Trash Can Square",
-        "priceEUR": 32,
-        "description": "",
-        "imgSrc": "../img/products/office-trash-can-square.jpg",
-        "tags": ["office", "accesories"]
-    },
-    {
-        "id": "ranarp-desk-lamp",
-        "name": "Ranarp Desk Lamp",
-        "priceEUR": 20,
-        "description": "",
-        "imgSrc": "../img/products/ranarp-desk-lamp.avif",
-        "tags": ["office", "lights"]
-    },
-    {
-        "id": "the-solid-desk",
-        "name": "\"The SOLID\" Desk",
-        "priceEUR": 410,
-        "description": "",
-        "imgSrc": "../img/products/the-solid-desk.webp",
-        "tags": ["office", "furniture"]
-    },
-    {
-        "id": "walnut-filing-cabinet",
-        "name": "Walnut Filing Cabinet",
-        "priceEUR": 95,
-        "description": "",
-        "imgSrc": "../img/products/walnut-filing-cabinet.jpg",
-        "tags": ["office", "furniture", "storage"]
-    },
-    {
-        "id": "wooden-corner-desk",
-        "name": "Wooden Corner Desk",
-        "priceEUR": 240,
-        "description": "",
-        "imgSrc": "../img/products/wooden-corner-desk.webp",
-        "tags": ["office", "furniture"]
-    }
+   {
+      "id": "wooden-chair",
+      "name": "Wooden Chair",
+      "priceEUR": 70,
+      "description": "Wooden chair that can be used inside and outside",
+      "imgSrc": "../img/products/chiar1.jpg",
+      "tags": ["garden", "kitchen-dining", "furniture"]
+   },
+   {
+      "id": "ricardo-chair",
+      "name": "Ricardo Chair",
+      "priceEUR": 105,
+      "description": "Perfect for a cozy living room or kitchen",
+      "imgSrc": "../img/products/chiar2.jpg",
+      "tags": ["kitchen-dining", "living", "furniture"]
+   },
+   {
+      "id": "alice-queen-bed",
+      "name": "Alice Queen Bed",
+      "priceEUR": 330,
+      "description": "Queen bed perfect for a lovely couple",
+      "imgSrc": "../img/products/alice-queen-bed.jpg",
+      "tags": ["bedroom", "furniture"]
+   },
+   {
+      "id": "sun-bed",
+      "name": "Sun Bed",
+      "priceEUR": 100,
+      "description": "Bed for a kid or small adult.",
+      "imgSrc": "../img/products/sun-bed.jpg",
+      "tags": ["bedroom", "furniture"]
+   },
+   {
+      "id": "container-bed",
+      "name": "Container bed",
+      "priceEUR": 480,
+      "description": "King size bed with a storage compartment.",
+      "imgSrc": "../img/products/container-bed.jpg",
+      "tags": ["bedroom", "furniture"]
+   },
+   {
+      "id": "adam-bookshelf",
+      "name": "Adam Bookshelf",
+      "priceEUR": 220,
+      "description": "",
+      "imgSrc": "../img/products/adam-bookshelf.jpg",
+      "tags": ["bedroom", "living", "furniture"]
+   },
+   {
+      "id": "alex-helves",
+      "name": "Alex Shelves",
+      "priceEUR": 35,
+      "description": "",
+      "imgSrc": "../img/products/alex-shelf.jpg",
+      "tags": ["bedroom", "storage"]
+   },
+   {
+      "id": "amanda-shelves",
+      "name": "Amanda Shelves",
+      "priceEUR": 79,
+      "description": "",
+      "imgSrc": "../img/products/amanda-shelves.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "living", "storage"]
+   },
+   {
+      "id": "box-nightstand",
+      "name": "Box Nightstand",
+      "priceEUR": 105,
+      "description": "",
+      "imgSrc": "../img/products/box-nightstand.webp",
+      "tags": ["bedroom", "furniture"]
+   },
+   {
+      "id": "brooklyn-lamp",
+      "name": "Brooklyn Lamp",
+      "priceEUR": 45,
+      "description": "",
+      "imgSrc": "../img/products/brooklyn-lamp.webp",
+      "tags": ["bedroom", "lights"]
+   },
+   {
+      "id": "cage-lamp",
+      "name": "Cage Lamp",
+      "priceEUR": 59,
+      "description": "",
+      "imgSrc": "../img/products/cage-lamp.jpg",
+      "tags": ["bedroom", "living", "lights"]
+   },
+   {
+      "id": "display-closet",
+      "name": "Display Closet",
+      "priceEUR": 320,
+      "description": "",
+      "imgSrc": "../img/products/display-closet.jpg",
+      "tags": ["bedroom", "storage", "furniture"]
+   },
+   {
+      "id": "double-wooden-dresser",
+      "name": "Double Wooden Dresser",
+      "priceEUR": 240,
+      "description": "",
+      "imgSrc": "../img/products/double-wooden-dresser.jpg",
+      "tags": ["bedroom", "furniture", "storage"]
+   },
+   {
+      "id": "emmerson-shelves",
+      "name": "Emmerson Shelves",
+      "priceEUR": 70,
+      "description": "",
+      "imgSrc": "../img/products/emmerson-shelves.jpg",
+      "tags": ["kitchen-dining", "storage"]
+   },
+   {
+      "id": "gia-dresser",
+      "name": "Gia Dresser",
+      "priceEUR": 129,
+      "description": "",
+      "imgSrc": "../img/products/gia-dresser.jpg",
+      "tags": ["bedroom", "living", "storage", "furniture"]
+   },
+   {
+      "id": "harlow-nightstand",
+      "name": "Harlow Nightstand",
+      "priceEUR": 95,
+      "description": "",
+      "imgSrc": "../img/products/harlow-nightstand.webp",
+      "tags": ["bedroom", "furniture"]
+   },
+   {
+      "id": "industrila-nightstand",
+      "name": "Industrial Nightstand",
+      "priceEUR": 60,
+      "description": "",
+      "imgSrc": "../img/products/industrial-nightstand.jpg",
+      "tags": ["bedroom", "furniture"]
+   },
+   {
+      "id": "ledder-bookshelf",
+      "name": "Ledder Bookshelf",
+      "priceEUR": 110,
+      "description": "",
+      "imgSrc": "../img/products/ledder-bookshelf.jpg",
+      "tags": ["living", "storage", "furniture"]
+   },
+   {
+      "id": "ledder-shelf",
+      "name": "Ledder Shelf",
+      "priceEUR": 89,
+      "description": "",
+      "imgSrc": "../img/products/ledder-shelf.jpg",
+      "tags": ["living", "storage", "furniture"]
+   },
+   {
+      "id": "marte-dresser",
+      "name": "Marte Dresser",
+      "priceEUR": 120,
+      "description": "",
+      "imgSrc": "../img/products/marte-dresser.webp",
+      "tags": ["bedroom", "storage", "furniture"]
+   },
+   {
+      "id": "stainless-steel-floor-lamp",
+      "name": "Stainless Steel Floor Lamp",
+      "priceEUR": 60,
+      "description": "",
+      "imgSrc": "../img/products/stainless-steel-floor-lamp.jpg",
+      "tags": ["bedroom", "living", "lights"]
+   },
+   {
+      "id": "tower-bookshelf",
+      "name": "Tilted Tower Bookshelf",
+      "priceEUR": 390,
+      "description": "",
+      "imgSrc": "../img/products/tower-bookshelf.webp",
+      "tags": ["bedroom", "furniture", "storage", "furniture"]
+   },
+   {
+      "id": "vase-lamp",
+      "name": "Vase Lamp",
+      "priceEUR": 70,
+      "description": "",
+      "imgSrc": "../img/products/vase-lamp.jpg",
+      "tags": ["bedroom", "living", "lights"]
+   },
+   {
+      "id": "brockton-bamboo-bathroom-accesories",
+      "name": "Brockton Bamboo Bathroom Accesories",
+      "priceEUR": 135,
+      "description": "",
+      "imgSrc": "../img/products/brockton-bamboo-bathroom-accesories.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "storage", "accesories"]
+   },
+   {
+      "id": "evo-toilet",
+      "name": "Evo Toilet",
+      "priceEUR": 160,
+      "description": "",
+      "imgSrc": "../img/products/evo-toilet.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "toilet"]
+   },
+   {
+      "id": "cast-iron-farm-sink",
+      "name": "Cast Iron Farm Sink",
+      "priceEUR": 190,
+      "description": "",
+      "imgSrc": "../img/products/cast-iron-farm-sink.webp",
+      "tags": ["bathroom", "bathroom-fixtures", "sink"]
+   },
+   {
+      "id": "ceramic-bathroom-5-set",
+      "name": "Ceramic Bathroom 5-set",
+      "priceEUR": 30,
+      "description": "",
+      "imgSrc": "../img/products/ceramic-bathroom-5-set.webp",
+      "tags": ["bathroom", "bathroom-fixtures", "sink"]
+   },
+   {
+      "id": "charlotte-toilet",
+      "name": "Charlotte Toilet",
+      "priceEUR": 210,
+      "description": "",
+      "imgSrc": "../img/products/charlotte-toilet.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "toilet"]
+   },
+   {
+      "id": "coughton-tallboy-cabinet",
+      "name": "Coughton Tabllboy Cabinet",
+      "priceEUR": 80,
+      "description": "",
+      "imgSrc": "../img/products/coughton-tallboy-cabinet.webp",
+      "tags": ["bathroom", "bathroom-fixtures", "storage"]
+   },
+   {
+      "id": "grohe-shower",
+      "name": "Grohe Shower",
+      "priceEUR": 40,
+      "description": "",
+      "imgSrc": "../img/products/grohe-shower.png",
+      "tags": ["bathroom", "bathroom-fixtures", "shower"]
+   },
+   {
+      "id": "joe-sink",
+      "name": "Joe Sink",
+      "priceEUR": 90,
+      "description": "",
+      "imgSrc": "../img/products/joe-sink.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "sink"]
+   },
+   {
+      "id": "layla-bathtub",
+      "name": "Layla Bathtub",
+      "priceEUR": 400,
+      "description": "",
+      "imgSrc": "../img/products/layla-bathtub.webp",
+      "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
+   },
+   {
+      "id": "matt-black-shower",
+      "name": "Matt Black Shower",
+      "priceEUR": 140,
+      "description": "",
+      "imgSrc": "../img/products/matt-black-shower.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "shower"]
+   },
+   {
+      "id": "milano-toilet.jpg",
+      "name": "Milano Toilet",
+      "priceEUR": 180,
+      "description": "",
+      "imgSrc": "../img/products/milano-toilet.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "toilet"]
+   },
+   {
+      "id": "mirinda-towel-holder",
+      "name": "Mirinda Tower Holder",
+      "priceEUR": 23,
+      "description": "",
+      "imgSrc": "../img/products/mirinda-towel-holder.jpg",
+      "tags": ["bathroom", "accesories"]
+   },
+   {
+      "id": "miza-wall-storage-cabinet",
+      "name": "Miza Wall Cabinet",
+      "priceEUR": 160,
+      "description": "",
+      "imgSrc": "../img/products/miza-wall-storage-cabinet.jpg",
+      "tags": ["bathroom", "storage", "furniture"]
+   },
+   {
+      "id": "royal-bathtub",
+      "name": "Royal Bathtub",
+      "priceEUR": 420,
+      "description": "",
+      "imgSrc": "../img/products/royal-bathtub.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
+   },
+   {
+      "id": "royal-gold-toilet",
+      "name": "Royal Gold Toilet",
+      "priceEUR": 1050,
+      "description": "",
+      "imgSrc": "../img/products/royal-gold-toilet.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "toilet"]
+   },
+   {
+      "id": "shark-bathtub",
+      "name": "Shark Bathtub",
+      "priceEUR": 310,
+      "description": "",
+      "imgSrc": "../img/products/shark-bathtub.avif",
+      "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
+   },
+   {
+      "id": "shower-soap-holder",
+      "name": "Shower Soap Holder",
+      "priceEUR": 15,
+      "description": "",
+      "imgSrc": "../img/products/shower-soap-holder.jpg",
+      "tags": ["bathroom", "accesories"]
+   },
+   {
+      "id": "tallboy-bathroom-wall-cabinet",
+      "name": "Tallboy Bathroom Wall Cabinet",
+      "priceEUR": 75,
+      "description": "",
+      "imgSrc": "../img/products/tallboy-bathroom-wall-cabinet.webp",
+      "tags": ["bathroom", "storage", "furniture"]
+   },
+   {
+      "id": "ultra-granite-sink",
+      "name": "Ultra Granite Sink",
+      "priceEUR": 145,
+      "description": "",
+      "imgSrc": "../img/products/ultra-granite-sink.webp",
+      "tags": ["bathroom", "bathroom-fixtures", "sink"]
+   },
+   {
+      "id": "vintage-bathtub",
+      "name": "Vintage Bathtub",
+      "priceEUR": 145,
+      "description": "",
+      "imgSrc": "../img/products/vintage-bathtub.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "bathtub"]
+   },
+   {
+      "id": "waterfall-sink",
+      "name": "Waterfall Sink",
+      "priceEUR": 135,
+      "description": "",
+      "imgSrc": "../img/products/waterfall-sink.jpg",
+      "tags": ["bathroom", "bathroom-fixtures", "sink"]
+   },
+   {
+      "id": "ergo-office-chair",
+      "name": "Ergo Office Chair",
+      "priceEUR": 155,
+      "description": "Ergonomic office chair great for posture",
+      "imgSrc": "../img/products/ergo-office-chair.webp",
+      "tags": ["office", "furniture"]
+   },
+   {
+      "id": "factory-desk-lamp",
+      "name": "Factory Desk lamp",
+      "priceEUR": 40,
+      "description": "Sleek lamp.",
+      "imgSrc": "../img/products/factory-desk-lamp.webp",
+      "tags": ["office", "living", "bedroom", "lights"]
+   },
+   {
+      "id": "fine-line-drawers",
+      "name": "Fine Line Drawers",
+      "priceEUR": 90,
+      "description": "",
+      "imgSrc": "../img/products/fine-line-drawers.webp",
+      "tags": ["office", "storage"]
+   },
+   {
+      "id": "flexible-desk-lamp",
+      "name": "Flexible Desk Lamp",
+      "priceEUR": 25,
+      "description": "",
+      "imgSrc": "../img/products/flexible-desk-lamp.jpg",
+      "tags": ["office", "lights"]
+   },
+   {
+      "id": "geo-desk-chair",
+      "name": "Geo Desk Chair",
+      "priceEUR": 110,
+      "description": "",
+      "imgSrc": "../img/products/geo-desk-chair.jpg",
+      "tags": ["office", "furniture"]
+   },
+   {
+      "id": "hally-office-chair",
+      "name": "Hally Office Chiar",
+      "priceEUR": 165,
+      "description": "",
+      "imgSrc": "../img/products/hally-office-chiar.webp",
+      "tags": ["office", "furniture"]
+   },
+   {
+      "id": "moncton-desk",
+      "name": "Moncton Desk",
+      "priceEUR": 190,
+      "description": "",
+      "imgSrc": "../img/products/moncton-desk.jpg",
+      "tags": ["office", "furniture"]
+   },
+   {
+      "id": "office-trash-can-round",
+      "name": "Office Trash Can Round",
+      "priceEUR": 32,
+      "description": "",
+      "imgSrc": "../img/products/office-trash-can-round.jpg",
+      "tags": ["office", "accesories"]
+   },
+   {
+      "id": "office-trash-can-square",
+      "name": "Office Trash Can Square",
+      "priceEUR": 32,
+      "description": "",
+      "imgSrc": "../img/products/office-trash-can-square.jpg",
+      "tags": ["office", "accesories"]
+   },
+   {
+      "id": "ranarp-desk-lamp",
+      "name": "Ranarp Desk Lamp",
+      "priceEUR": 20,
+      "description": "",
+      "imgSrc": "../img/products/ranarp-desk-lamp.avif",
+      "tags": ["office", "lights"]
+   },
+   {
+      "id": "the-solid-desk",
+      "name": "\"The SOLID\" Desk",
+      "priceEUR": 410,
+      "description": "",
+      "imgSrc": "../img/products/the-solid-desk.webp",
+      "tags": ["office", "furniture"]
+   },
+   {
+      "id": "walnut-filing-cabinet",
+      "name": "Walnut Filing Cabinet",
+      "priceEUR": 95,
+      "description": "",
+      "imgSrc": "../img/products/walnut-filing-cabinet.jpg",
+      "tags": ["office", "furniture", "storage"]
+   },
+   {
+      "id": "wooden-corner-desk",
+      "name": "Wooden Corner Desk",
+      "priceEUR": 240,
+      "description": "",
+      "imgSrc": "../img/products/wooden-corner-desk.webp",
+      "tags": ["office", "furniture"]
+   },
+   {
+      "id": "barrel-plant-pot",
+      "name": "Battel Plant Pot",
+      "priceEUR": 30,
+      "description": "",
+      "imgSrc": "../img/products/barrel-plant-pot.avif",
+      "tags": ["garden", "plant-pot"]
+   },
+   {
+      "id": "elevated-plant-pot",
+      "name": "Elevated Plant Pot",
+      "priceEUR": 25,
+      "description": "",
+      "imgSrc": "../img/products/elevated-plant-pot.jpg",
+      "tags": ["garden", "living", "plant-pot"]
+   },
+   {
+      "id": "industrial-outside-set",
+      "name": "Industrial Outside Set",
+      "priceEUR": 490,
+      "description": "",
+      "imgSrc": "../img/products/industrial-outdoor-set.jpg",
+      "tags": ["garden", "table"]
+   },
+   {
+      "id": "island-paradise-chair",
+      "name": "Island Paradise Chair",
+      "priceEUR": 45,
+      "description": "",
+      "imgSrc": "../img/products/island-paradise-chiar.jpg",
+      "tags": ["garden", "chair"]
+   },
+   {
+      "id": "metallic-watering-can",
+      "name": "Metallic Watering Can 4L",
+      "priceEUR": 37,
+      "description": "",
+      "imgSrc": "../img/products/metallic-watering-can.webp",
+      "tags": ["garden", "watering-can"]
+   },
+   {
+      "id": "outside-plant-pots-set",
+      "name": "Outside Ceramic Plant Pot Set",
+      "priceEUR": 105,
+      "description": "",
+      "imgSrc": "../img/products/outside-plant-pots-set.jpg",
+      "tags": ["garden", "plant-pot"]
+   },
+   {
+      "id": "peter-chair",
+      "name": "Peter Chair",
+      "priceEUR": 65,
+      "description": "",
+      "imgSrc": "../img/products/peter-chair.jpg",
+      "tags": ["garden", "chiar"]
+   },
+   {
+      "id": "round-garden-table",
+      "name": "Round Garden Table",
+      "priceEUR": 88,
+      "description": "",
+      "imgSrc": "../img/products/round-garden-table.jpeg",
+      "tags": ["garden", "table"]
+   },
+   {
+      "id": "small-watering-can",
+      "name": "Small Watering Can",
+      "priceEUR": 32,
+      "description": "",
+      "imgSrc": "../img/products/small-watering-can.avif",
+      "tags": ["garden", "watering-can"]
+   },
+   {
+      "id": "westminster-chiar",
+      "name": "Westminster Chair",
+      "priceEUR": 75,
+      "description": "",
+      "imgSrc": "../img/products/westminster-chair.jpg",
+      "tags": ["garden", "chiar"]
+   }
 ]
