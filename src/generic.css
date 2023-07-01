@@ -99,8 +99,25 @@ header {
     justify-content: right;
 }
 
-#cart button {
+#cartBtn {
     border: 0;
+    position: relative;
+}
+
+#bubble {
+    background-color: var(--moonRed);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    border-radius: 25px;
+    font-size: var(--moonFontSize3);
+    color: var(--moonWhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
 }
 
 /** Nav Bar  */
