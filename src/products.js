@@ -282,15 +282,43 @@ function addToCart(id) {
         // If the product doesn't exist, insert is with cnt 1
         productsArray.push({ id: id, cnt: 1 });
     }
-    console.log('productsArray', productsArray);
-
-    // if the product already exists, bump up cnt
-    // else add the product
-
-    // console.log('Araay after push', productsArray);
-    // console.log('productsInCart will be ', JSON.stringify(productsArray));
-    // Put the array back in localStorage
     localStorage.setItem('productsInCart', JSON.stringify(productsArray));
+    addedItemAlert();
+
+    function addedItemAlert() {
+        // Create alarm
+        const alert = document.createElement('div');
+        alert.classList.add('alert');
+        document.querySelector('body').append(alert);
+
+        const textDiv = document.createElement('div');
+        textDiv.classList.add('confirmationTextDiv');
+        alert.appendChild(textDiv);
+
+        const text = document.createElement('p');
+        text.classList.add('confirmationText');
+        text.innerText = 'The item was added to the cart!';
+        textDiv.appendChild(text);
+
+        const cancelBtn = document.createElement('button');
+        cancelBtn.classList.add('okBtn');
+        cancelBtn.innerText = 'OK';
+        alert.appendChild(cancelBtn);
+
+        cancelBtn.addEventListener('click', (e) => {
+            removeAlarm(e.target.parentNode, e.target.parentNode.parentNode);
+        });
+
+        const timeout = setTimeout(() => {
+            removeAlarm(alert, document.querySelector('body'));
+        }, 2000);
+
+        function removeAlarm(alarm, alarmParent) {
+            console.log(alarm, alarmParent);
+            alarmParent.removeChild(alarm);
+            clearTimeout(timeout);
+        }
+    }
 }
 
 // Checks if an item is already in products
