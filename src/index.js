@@ -10,7 +10,6 @@ async function loadRandomProducts(container, cnt) {
 
     for (let i = 0; i < cnt; i++) {
         const index = Math.floor(Math.random() * data.length);
-        console.log('index', index);
         generateProduct(
             data[index].id,
             data[index].name,
