@@ -17,6 +17,9 @@ async function loadRandomProducts(container, cnt) {
             data[index].imgSrc,
             container
         );
+        console.log('before remove', data);
+        data.splice(index, 1);
+        console.log('after remove', data);
     }
 }
 
