@@ -92,3 +92,52 @@
     font-size: var(--moonFontSize2);
     justify-self: center;
 }
+
+.alert {
+    width: 900px;
+    background-color: var(--moonRed);
+    border: 1px solid var(--moonBlack);
+    height: 70px;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    animation-name: popup;
+    animation-duration: 1s;
+}
+
+@keyframes popup {
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 50px;
+    }
+}
+
+.alert > button {
+    background-color: var(--moonWhite);
+    border: 1px solid var(--moonBlack);
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+    justify-self: flex-end;
+}
+
+.alert > button:hover {
+    background-color: var(--moonBlack);
+    color: var(--moonWhite);
+}
+
+.alert > button:active {
+    background-color: var(--moonWhite);
+    color: var(--moonWhite);
+}
+
+.textDiv {
+    justify-self: flex-start;
+}

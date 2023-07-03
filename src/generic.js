@@ -18,7 +18,6 @@ function addBubble() {
     // TODO: is there a better method?
     setInterval(() => {
         bubble.innerText = getItemsInCartCnt();
-        console.log(bubble.innerText);
         if (bubble.innerText === '0') {
             bubble.style.display = 'none';
         } else {

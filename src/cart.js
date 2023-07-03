@@ -12,9 +12,8 @@ window.onload = () => {
 async function loadItems(productsArray, container) {
     const fetchedData = await fetch('products.json');
     const data = await fetchedData.json();
-    console.log(data);
     productsArray.forEach((obj) => {
-        console.log(obj);
+        // console.log(obj);
         data.every((dataEl) => {
             if (obj.id === dataEl.id) {
                 createItem(
@@ -99,7 +98,6 @@ function createItem(id, imgSrc, name, cnt, price, container) {
 
 async function updateItmCountFromInput(id, newInput) {
     newInput = parseInt(newInput);
-    console.log(id, newInput);
     if (newInput === 0) {
         deleteItem(id);
     } else {
@@ -109,15 +107,14 @@ async function updateItmCountFromInput(id, newInput) {
                 el.cnt = newInput;
             }
         });
-        console.log(cartArray);
         localStorage.setItem('productsInCart', JSON.stringify(cartArray));
     }
 }
 
-function deleteItem(id) {
-    console.log('Deleting', id);
+async function deleteItem(id) {
+    deleteAlert();
+
     const cartArray = JSON.parse(localStorage.getItem('productsInCart'));
-    alert('You are going to delete:', id);
     console.log(cartArray);
     cartArray.forEach((el) => {
         if (el.id === id) {
@@ -125,7 +122,42 @@ function deleteItem(id) {
         }
     });
     localStorage.setItem('productsInCart', JSON.stringify(cartArray));
-    location.reload();
+}
+
+function deleteAlert() {
+    // Create alarm
+    const alert = document.createElement('div');
+    alert.classList.add('alert');
+    document.querySelector('body').append(alert);
+
+    const textDiv = document.createElement('div');
+    textDiv.classList.add('confirmationTextDiv');
+    alert.appendChild(textDiv);
+
+    const text = document.createElement('p');
+    text.classList.add('confirmationText');
+    text.innerText = 'The item was deleted!';
+    textDiv.appendChild(text);
+
+    const cancelBtn = document.createElement('button');
+    cancelBtn.classList.add('cancelBtn');
+    cancelBtn.innerText = 'OK';
+    alert.appendChild(cancelBtn);
+
+    cancelBtn.addEventListener('click', (e) => {
+        removeAlarm(e.target.parentNode, e.target.parentNode.parentNode);
+    });
+
+    const timeout = setTimeout(() => {
+        removeAlarm(alert, document.querySelector('body'));
+    }, 3000);
+
+    function removeAlarm(alarm, alarmParent) {
+        console.log(alarm, alarmParent);
+        alarmParent.removeChild(alarm);
+        clearTimeout(timeout);
+        location.reload();
+    }
 }
 
 function getPriceString(pricePerItem, cnt) {
@@ -133,7 +165,6 @@ function getPriceString(pricePerItem, cnt) {
     if (cnt > 1) {
         string += pricePerItem + ' EUR * ' + cnt + '\n';
         const total = getItemTotalPrice(pricePerItem, cnt);
-        console.log(total);
         string += total + ' EUR';
         return string;
     }
@@ -144,10 +175,8 @@ async function updateSubtotalPrice() {
     let price = 0;
     const fetchedData = await fetch('products.json');
     const data = await fetchedData.json();
-    console.log(data);
 
     const productsInCart = JSON.parse(localStorage.getItem('productsInCart'));
-    console.log(productsInCart);
 
     productsInCart.forEach((el) => {
         data.every((dataEl) => {
