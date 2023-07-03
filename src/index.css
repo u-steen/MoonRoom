@@ -47,38 +47,6 @@
     /* overflow: scroll; */
 }
 
-#prevArrow,
-#nextArrow {
-    font-size: 3.5rem;
-    color: var(--moonBlack);
-}
-
-.card {
-    background-color: var(--moonWhite);
-    height: 250px;
-    width: 200px;
-}
-
-.card .cardTextBox {
-    font-size: var(--moonFontSize2);
-    background-color: var(--moonBrown);
-    color: var(--moonWhite);
-    font-weight: 600;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cardTextBox > h2 {
-    display: inline;
-}
-
-.card img {
-    height: 200px;
-    width: 200px;
-}
-
 .card:nth-child(2n) img {
     content: url('../img/products/chiar1.jpg');
 }
@@ -149,4 +117,143 @@
     width: 100%;
     object-fit: cover;
     background-color: hotpink;
+}
+
+/* Product */
+.product {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    border: 1px solid var(--moonGray);
+    display: flex;
+}
+
+.product img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.product:hover img {
+    filter: brightness(50%);
+}
+
+#pNameDiv {
+    display: table;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 30px;
+}
+
+#pPriceDiv {
+    display: table;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 90px;
+}
+.product h3 {
+    display: none;
+    position: absolute;
+    width: 80px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 70px;
+    color: var(--moonWhite);
+}
+
+.product h2 {
+    display: none;
+    vertical-align: middle;
+    color: var(--moonWhite);
+}
+
+.product button {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 140px;
+    border: 0;
+}
+
+.pViewPageDiv {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50px;
+    border: 0;
+}
+
+.pContentDiv:hover {
+    display: table;
+}
+
+.product:hover h2,
+.product:hover h3,
+.product:hover button,
+.product:hover .pViewPageDiv {
+    display: table-cell;
+}
+
+.alert {
+    width: 900px;
+    background-color: var(--moonGreen);
+    border: 1px solid var(--moonBlack);
+    height: 70px;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    animation-name: popup;
+    animation-duration: 1s;
+}
+
+@keyframes popup {
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 50px;
+    }
+}
+
+.alert > button {
+    background-color: var(--moonWhite);
+    border: 1px solid var(--moonBlack);
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+    justify-self: flex-end;
+}
+
+.alert > button:hover {
+    background-color: var(--moonBlack);
+    color: var(--moonWhite);
+}
+
+.alert > button:active {
+    background-color: var(--moonWhite);
+    color: var(--moonWhite);
+}
+
+.textDiv {
+    justify-self: flex-start;
 }
